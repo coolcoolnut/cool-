@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>⚔ GO AHEAD</title>
 <!-- PWA manifest for home screen icon -->
-<link rel="manifest" href="data:application/json,{\"name\":\"GO AHEAD\",\"short_name\":\"GO AHEAD\",\"start_url\":\".\",\"display\":\"standalone\",\"background_color\":\"#f5f4f0\",\"theme_color\":\"#6655e8\",\"icons\":[{\"src\":\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236655e8'/%3E%3Ctext y='68' x='50' text-anchor='middle' font-size='55'%3E⚔%3C/text%3E%3C/svg%3E\",\"sizes\":\"any\",\"type\":\"image/svg+xml\"}]}">
-<meta name="theme-color" content="#6655e8">
+<link rel="manifest" id="pwa-manifest" href="">
+<meta name="theme-color" id="pwa-theme-color" content="#f5f4f0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="GO AHEAD">
@@ -441,6 +441,20 @@ body.fs-xl{--task-fs:17px}
   <label><input type="radio" name="th" value="th-forest" onchange="setTheme(this.value)"> 🌲 森林</label>
   <label><input type="radio" name="th" value="th-ocean" onchange="setTheme(this.value)"> 🌊 深海</label>
   <div style="height:1px;background:var(--brd);margin:8px 0"></div>
+  <div style="font-size:10px;color:var(--text3);font-weight:700;margin-bottom:6px;text-transform:uppercase">📱 主屏图标背景色</div>
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap">
+    <input type="color" id="pwa-bg-picker" value="#f5f4f0" oninput="setPwaBgColor(this.value)" style="width:36px;height:28px;border-radius:6px;border:1px solid var(--brd2);background:none;cursor:pointer;padding:1px">
+    <div style="display:flex;gap:4px;flex-wrap:wrap">
+      <button onclick="setPwaBgColor('#ffffff')" title="白色" style="width:22px;height:22px;border-radius:5px;border:1px solid var(--brd2);background:#fff;cursor:pointer"></button>
+      <button onclick="setPwaBgColor('#f5f4f0')" title="米白" style="width:22px;height:22px;border-radius:5px;border:1px solid var(--brd2);background:#f5f4f0;cursor:pointer"></button>
+      <button onclick="setPwaBgColor('#1a1a2e')" title="深蓝" style="width:22px;height:22px;border-radius:5px;border:1px solid var(--brd2);background:#1a1a2e;cursor:pointer"></button>
+      <button onclick="setPwaBgColor('#223020')" title="深绿" style="width:22px;height:22px;border-radius:5px;border:1px solid var(--brd2);background:#223020;cursor:pointer"></button>
+      <button onclick="setPwaBgColor('#fff0f4')" title="樱花" style="width:22px;height:22px;border-radius:5px;border:1px solid var(--brd2);background:#fff0f4;cursor:pointer"></button>
+      <button onclick="setPwaBgColor('#f0faf5')" title="薄荷" style="width:22px;height:22px;border-radius:5px;border:1px solid var(--brd2);background:#f0faf5;cursor:pointer"></button>
+    </div>
+  </div>
+  <div style="font-size:9px;color:var(--text3);margin-bottom:6px">改色后重新「添加到主屏幕」生效</div>
+  <div style="height:1px;background:var(--brd);margin:8px 0"></div>
   <div style="font-size:10px;color:var(--text3);font-weight:700;margin-bottom:6px;text-transform:uppercase">字体大小</div>
   <div class="fs-ctrl">
     <button class="fs-btn" onclick="changeFontSize(-1)" title="缩小">A−</button>
@@ -639,7 +653,7 @@ function defState(){
   dailySummaries:[],
   nextId:50,nextStepId:300,lastReset:'',theme:'th-light',undoStack:[],taskOrder:[],
   logSubTab:'diary',diaryEntries:[],syncToken:'',syncGistId:'',statPeriod:'week',
-  tabHidden:[],tabMode:'custom',fontSize:1,addFormOpen:true,reminders:[],todayCollapsed:{mustdo:false,other:false,done:true},doneGroupCollapsed:{},tabDoneCollapsed:{section:false,today:false,past:true}
+  tabHidden:[],tabMode:'custom',fontSize:1,addFormOpen:true,reminders:[],todayCollapsed:{mustdo:false,other:false,done:true},doneGroupCollapsed:{},tabDoneCollapsed:{section:false,today:false,past:true},pwaIconColor:'#ffffff',pwaBgColor:'#f5f4f0'
 };}
 
 let S,editingId=null,bulkSel=new Set(),expandedDone=new Set(),collapsedSteps=new Set(),multiselect=false,shopEditId=null,renamingTab=null;
@@ -661,6 +675,8 @@ if(!S.reminders)S.reminders=[];
 if(!S.todayCollapsed)S.todayCollapsed={mustdo:false,other:false,done:true};
 if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
 if(!S.tabOrder||S.tabOrder.length<8)S.tabOrder=[...DEF_TAB_ORDER];
 S.tabOrder=S.tabOrder.filter(t=>t!=='focus'); // moved focus into log sub-tab
 if(S.activeTab==='focus'){S.activeTab='log';S.logSubTab='focus';}
@@ -697,6 +713,36 @@ function checkReset(){
 checkReset();setInterval(()=>{if(new Date().toDateString()!==S.lastReset)checkReset();},60000);
 
 // theme
+function updatePwaManifest(){
+  const iconColor=S.pwaIconColor||'#ffffff';
+  const bgColor=S.pwaBgColor||'#f5f4f0';
+  // Build SVG icon with chosen background
+  const svgEncoded=encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">'
+    +'<rect width="100" height="100" rx="20" fill="'+bgColor+'"/>'
+    +'<text y="68" x="50" text-anchor="middle" font-size="55">⚔</text>'
+    +'</svg>'
+  );
+  const manifest={
+    name:'GO AHEAD',short_name:'GO AHEAD',start_url:'.',display:'standalone',
+    background_color:bgColor,theme_color:bgColor,
+    icons:[{src:'data:image/svg+xml,'+svgEncoded,sizes:'any',type:'image/svg+xml'}]
+  };
+  const blob=new Blob([JSON.stringify(manifest)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const el=document.getElementById('pwa-manifest');
+  if(el){if(el._prevUrl)URL.revokeObjectURL(el._prevUrl);el.href=url;el._prevUrl=url;}
+  const tc=document.getElementById('pwa-theme-color');
+  if(tc)tc.content=bgColor;
+  // Update pwa color pickers in panel
+  const bgPicker=document.getElementById('pwa-bg-picker');
+  if(bgPicker)bgPicker.value=bgColor;
+}
+function setPwaBgColor(val){
+  S.pwaBgColor=val;save();
+  updatePwaManifest();
+  showToast('📱 图标背景已更新');
+}
 function setTheme(th){
   const fsCls=document.body.className.match(/fs-\w+/);
   document.body.className=th+(fsCls?' '+fsCls[0]:'');
@@ -1022,6 +1068,8 @@ const md=document.getElementById('erecur-md-'+id);if(md)t.recurMonthDay=parseInt
 function toggleDoneGroup(key){
   if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
   // Determine current state (default: collapsed for non-today)
   const now_=new Date();
   const todayKey_=now_.toDateString();
@@ -1033,6 +1081,8 @@ if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
 function collapseAllDoneGroups(){
   if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
   // Collapse all except today
   S.doneList.forEach(d=>{
     if(!d.ts)return;
@@ -1045,6 +1095,8 @@ if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
 function expandAllDoneGroups(){
   if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
   S.doneList.forEach(d=>{
     if(!d.ts)return;
     S.doneGroupCollapsed[new Date(d.ts).toDateString()]=false;
@@ -1699,6 +1751,8 @@ ${d.text}
 }
 function toggleTabDone(key){
   if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
   S.tabDoneCollapsed[key]=!S.tabDoneCollapsed[key];
   save();render();
 }
@@ -1706,6 +1760,8 @@ function toggleTodaySection(key){
   if(!S.todayCollapsed)S.todayCollapsed={mustdo:false,other:false,done:true};
 if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
   S.todayCollapsed[key]=!S.todayCollapsed[key];
   save();render();
 }
@@ -2101,6 +2157,8 @@ if(!S.reminders)S.reminders=[];
 if(!S.todayCollapsed)S.todayCollapsed={mustdo:false,other:false,done:true};
 if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
 
 let _lastReminderMinute='';
 function checkReminders(){
@@ -2136,6 +2194,8 @@ function quickAddReminder(tid){
 if(!S.todayCollapsed)S.todayCollapsed={mustdo:false,other:false,done:true};
 if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
   S.reminders.push({id:'rem'+Date.now(),taskId:tid,taskName:t.name,time,label:defaultLabel,days:[],enabled:true});
   save();showToast('⏰ 提醒已设为 '+time+'：'+defaultLabel);
   ensureNotifPermission(granted=>{if(!granted)showToast('⚠️ 请在🔔页面开启通知权限');});
@@ -2181,6 +2241,8 @@ function addReminder(){
 if(!S.todayCollapsed)S.todayCollapsed={mustdo:false,other:false,done:true};
 if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
   S.reminders.push({id:'rem'+Date.now(),taskId,taskName:task?task.name:'',time,label,days:[],enabled:true});
   document.getElementById('reminder-time').value='';
   document.getElementById('reminder-label').value='';
@@ -2313,6 +2375,8 @@ if(!S.reminders)S.reminders=[];
 if(!S.todayCollapsed)S.todayCollapsed={mustdo:false,other:false,done:true};
 if(!S.doneGroupCollapsed)S.doneGroupCollapsed={};
 if(!S.tabDoneCollapsed)S.tabDoneCollapsed={section:false,today:false,past:true};
+if(!S.pwaIconColor)S.pwaIconColor='#ffffff';
+if(!S.pwaBgColor)S.pwaBgColor='#f5f4f0';
     S.tasks.forEach(t=>{if(t.fragCount===undefined)t.fragCount=0;if(t.fragTag===undefined)t.fragTag=false;if(!t.pomoMins)t.pomoMins=25;if(!t.pomoLogs)t.pomoLogs=[];if(!t.recurMonthDay)t.recurMonthDay=1;});
     S.syncToken=keepToken;S.syncGistId=keepGistId;
     save();setTheme(S.theme||'th-light');applyFontSize(S.fontSize||1);buildTabs();buildCatUI();updateStats();render();
@@ -2325,6 +2389,7 @@ setTheme(S.theme||'th-light');
 applyFontSize(S.fontSize||1);
 buildTabs();buildCatUI();
 syncAddForm();updateStats();render();
+setTimeout(updatePwaManifest,100);
 </script>
 
 <!-- GitHub Gist Sync Modal -->
@@ -2421,7 +2486,6 @@ syncAddForm();updateStats();render();
     </div>
   </div>
   <div style="text-align:right;margin-top:10px"><button class="hbtn" onclick="closeOv('reminderov')">关闭</button></div>
-  <script type="module" src="/index.tsx"></script>
 </div></div>
 
 </body>
