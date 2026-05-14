@@ -867,5 +867,6 @@ setInterval(renderTodaySummary,60000); // refresh fasting bars every minute
 init();
 if(!DB.get('_launched')){DB.set('_launched',true);setTimeout(()=>showToast('👋 先设置今天的状态模式吧'),1200)}
 </script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
