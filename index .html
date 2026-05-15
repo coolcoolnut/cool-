@@ -5,77 +5,121 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="能量冲浪手">
-<meta name="theme-color" content="#f5f0eb">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#8b6f5e">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iIzRhN2M2ZiIvPgogIDwhLS0gT2NlYW4gd2F2ZXMgLS0+CiAgPHBhdGggZD0iTTAgMzQwIFE2NCAzMTAgMTI4IDM0MCBRMTkyIDM3MCAyNTYgMzQwIFEzMjAgMzEwIDM4NCAzNDAgUTQ0OCAzNzAgNTEyIDM0MCBMNTEyIDUxMiBMMCA1MTIgWiIgZmlsbD0iIzJkNWE1MCIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTAgMzcwIFE4MCAzNDAgMTYwIDM3MCBRMjQwIDQwMCAzMjAgMzcwIFE0MDAgMzQwIDUxMiAzNzAgTDUxMiA1MTIgTDAgNTEyIFoiIGZpbGw9IiMxYTNkMzUiIG9wYWNpdHk9IjAuOCIvPgogIDwhLS0gU3VyZmJvYXJkIC0tPgogIDxlbGxpcHNlIGN4PSIyNzAiIGN5PSIyOTUiIHJ4PSI4NSIgcnk9IjIyIiByeDI9Ijg1IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzAsMjcwLDI5NSkiIGZpbGw9IiNmNWM4NDIiIHN0cm9rZT0iI2U2YTgwMCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGVsbGlwc2UgY3g9IjI3MCIgY3k9IjI5NSIgcng9Ijg1IiByeT0iMjIiIHRyYW5zZm9ybT0icm90YXRlKC0zMCwyNzAsMjk1KSIgZmlsbD0iI2Y1Yzg0MiIvPgogIDxsaW5lIHgxPSIyMjAiIHkxPSIyNjUiIHgyPSIzMjAiIHkyPSIzMjUiIHN0cm9rZT0iI2U2YTgwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPCEtLSBHaXJsIGJvZHkgLS0+CiAgPGVsbGlwc2UgY3g9IjI1OCIgY3k9IjI3NSIgcng9IjE0IiByeT0iMTgiIGZpbGw9IiNmNGE1NzQiIHRyYW5zZm9ybT0icm90YXRlKC0zMCwyNTgsMjc1KSIvPgogIDwhLS0gSGVhZCAtLT4KICA8Y2lyY2xlIGN4PSIyNDIiIGN5PSIyNDAiIHI9IjIyIiBmaWxsPSIjZjRhNTc0Ii8+CiAgPCEtLSBIYWlyIC0tPgogIDxwYXRoIGQ9Ik0yMjIgMjI4IFEyMzAgMjAwIDI1NSAyMDUgUTI3NSAyMDggMjY4IDIzMCBRMjYwIDIxMCAyNDAgMjE1IFoiIGZpbGw9IiMzZDIwMTAiLz4KICA8cGF0aCBkPSJNMjIwIDIzNSBRMjE1IDI2MCAyMjUgMjc1IFEyMzAgMjU1IDIyOCAyNDAgWiIgZmlsbD0iIzNkMjAxMCIvPgogIDxwYXRoIGQ9Ik0yNjUgMjI1IFEyNzggMjQ1IDI3MiAyNjUgUTI2OCAyNDggMjYyIDIzOCBaIiBmaWxsPSIjNWMzMDE1Ii8+CiAgPCEtLSBBcm1zIHVwIChzdXJmaW5nIHBvc2UpIC0tPgogIDxwYXRoIGQ9Ik0yNTAgMjY1IFEyMjUgMjQ1IDIxMCAyMzAiIHN0cm9rZT0iI2Y0YTU3NCIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNMjY4IDI2MiBRMjkwIDI0MCAzMDAgMjI1IiBzdHJva2U9IiNmNGE1NzQiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPCEtLSBTd2ltc3VpdCB0b3AgLS0+CiAgPHBhdGggZD0iTTI0NiAyNjggUTI1OCAyNjAgMjcyIDI2OCBRMjY4IDI4MCAyNTggMjgwIFEyNDggMjgwIDI0NiAyNjggWiIgZmlsbD0iI2M0OTU2YSIvPgogIDwhLS0gU2hvcnRzIC0tPgogIDxwYXRoIGQ9Ik0yNDggMjc4IFEyNTggMjgyIDI2OCAyNzggTDI2NSAyOTYgUTI1OCAyOTggMjUyIDI5NiBaIiBmaWxsPSIjOGI2ZjVlIi8+CiAgPCEtLSBMZWdzIG9uIGJvYXJkIC0tPgogIDxwYXRoIGQ9Ik0yNTIgMjk1IFEyNDUgMzEwIDI0MCAzMjAiIHN0cm9rZT0iI2Y0YTU3NCIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNMjY1IDI5NSBRMjcyIDMxMCAyNzggMzIwIiBzdHJva2U9IiNmNGE1NzQiIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPCEtLSBTdW4gLS0+CiAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMTAwIiByPSIzNSIgZmlsbD0iI2Y1Yzg0MiIgb3BhY2l0eT0iMC45Ii8+CiAgPGxpbmUgeDE9IjQwMCIgeTE9IjQ4IiB4Mj0iNDAwIiB5Mj0iNTgiIHN0cm9rZT0iI2Y1Yzg0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iNDAwIiB5MT0iMTQyIiB4Mj0iNDAwIiB5Mj0iMTUyIiBzdHJva2U9IiNmNWM4NDIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjM0OCIgeTE9IjEwMCIgeDI9IjM1OCIgeTI9IjEwMCIgc3Ryb2tlPSIjZjVjODQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSI0NDIiIHkxPSIxMDAiIHgyPSI0NTIiIHkyPSIxMDAiIHN0cm9rZT0iI2Y1Yzg0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMzY0IiB5MT0iNjQiIHgyPSIzNzEiIHkyPSI3MSIgc3Ryb2tlPSIjZjVjODQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSI0MjkiIHkxPSIxMjkiIHgyPSI0MzYiIHkyPSIxMzYiIHN0cm9rZT0iI2Y1Yzg0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iNDM2IiB5MT0iNjQiIHgyPSI0MjkiIHkyPSI3MSIgc3Ryb2tlPSIjZjVjODQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSIzNzEiIHkxPSIxMjkiIHgyPSIzNjQiIHkyPSIxMzYiIHN0cm9rZT0iI2Y1Yzg0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIFNwcmF5IGRyb3BsZXRzIC0tPgogIDxjaXJjbGUgY3g9IjMxMCIgY3k9IjMzNSIgcj0iNCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNyIvPgogIDxjaXJjbGUgY3g9IjI5NSIgY3k9IjMyMCIgcj0iMyIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNSIvPgogIDxjaXJjbGUgY3g9IjMyNSIgY3k9IjMyMCIgcj0iMyIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4K">
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20%22%5Cu5403%5Cu5427%5Cuff01%5Cu80fd%5Cu91cf%5Cu51b2%5Cu6d6a%5Cu624b%22%2C%20%22short_name%22%3A%20%22%5Cu80fd%5Cu91cf%5Cu51b2%5Cu6d6a%5Cu624b%22%2C%20%22description%22%3A%20%22%5Cu4f60%5Cu7684%5Cu4e2a%5Cu4eba%5Cu80fd%5Cu91cf%5Cu4e0e%5Cu996e%5Cu98df%5Cu8ffd%5Cu8e2a%5Cu4f19%5Cu4f34%22%2C%20%22start_url%22%3A%20%22.%2F%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22background_color%22%3A%20%22%23f5f0eb%22%2C%20%22theme_color%22%3A%20%22%238b6f5e%22%2C%20%22orientation%22%3A%20%22portrait%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iIzRhN2M2ZiIvPgogIDwhLS0gT2NlYW4gd2F2ZXMgLS0%2BCiAgPHBhdGggZD0iTTAgMzQwIFE2NCAzMTAgMTI4IDM0MCBRMTkyIDM3MCAyNTYgMzQwIFEzMjAgMzEwIDM4NCAzNDAgUTQ0OCAzNzAgNTEyIDM0MCBMNTEyIDUxMiBMMCA1MTIgWiIgZmlsbD0iIzJkNWE1MCIgb3BhY2l0eT0iMC42Ii8%2BCiAgPHBhdGggZD0iTTAgMzcwIFE4MCAzNDAgMTYwIDM3MCBRMjQwIDQwMCAzMjAgMzcwIFE0MDAgMzQwIDUxMiAzNzAgTDUxMiA1MTIgTDAgNTEyIFoiIGZpbGw9IiMxYTNkMzUiIG9wYWNpdHk9IjAuOCIvPgogIDwhLS0gU3VyZmJvYXJkIC0tPgogIDxlbGxpcHNlIGN4PSIyNzAiIGN5PSIyOTUiIHJ4PSI4NSIgcnk9IjIyIiByeDI9Ijg1IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzAsMjcwLDI5NSkiIGZpbGw9IiNmNWM4NDIiIHN0cm9rZT0iI2U2YTgwMCIgc3Ryb2tlLXdpZHRoPSIzIi8%2BCiAgPGVsbGlwc2UgY3g9IjI3MCIgY3k9IjI5NSIgcng9Ijg1IiByeT0iMjIiIHRyYW5zZm9ybT0icm90YXRlKC0zMCwyNzAsMjk1KSIgZmlsbD0iI2Y1Yzg0MiIvPgogIDxsaW5lIHgxPSIyMjAiIHkxPSIyNjUiIHgyPSIzMjAiIHkyPSIzMjUiIHN0cm9rZT0iI2U2YTgwMCIgc3Ryb2tlLXdpZHRoPSIyIi8%2BCiAgPCEtLSBHaXJsIGJvZHkgLS0%2BCiAgPGVsbGlwc2UgY3g9IjI1OCIgY3k9IjI3NSIgcng9IjE0IiByeT0iMTgiIGZpbGw9IiNmNGE1NzQiIHRyYW5zZm9ybT0icm90YXRlKC0zMCwyNTgsMjc1KSIvPgogIDwhLS0gSGVhZCAtLT4KICA8Y2lyY2xlIGN4PSIyNDIiIGN5PSIyNDAiIHI9IjIyIiBmaWxsPSIjZjRhNTc0Ii8%2BCiAgPCEtLSBIYWlyIC0tPgogIDxwYXRoIGQ9Ik0yMjIgMjI4IFEyMzAgMjAwIDI1NSAyMDUgUTI3NSAyMDggMjY4IDIzMCBRMjYwIDIxMCAyNDAgMjE1IFoiIGZpbGw9IiMzZDIwMTAiLz4KICA8cGF0aCBkPSJNMjIwIDIzNSBRMjE1IDI2MCAyMjUgMjc1IFEyMzAgMjU1IDIyOCAyNDAgWiIgZmlsbD0iIzNkMjAxMCIvPgogIDxwYXRoIGQ9Ik0yNjUgMjI1IFEyNzggMjQ1IDI3MiAyNjUgUTI2OCAyNDggMjYyIDIzOCBaIiBmaWxsPSIjNWMzMDE1Ii8%2BCiAgPCEtLSBBcm1zIHVwIChzdXJmaW5nIHBvc2UpIC0tPgogIDxwYXRoIGQ9Ik0yNTAgMjY1IFEyMjUgMjQ1IDIxMCAyMzAiIHN0cm9rZT0iI2Y0YTU3NCIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNMjY4IDI2MiBRMjkwIDI0MCAzMDAgMjI1IiBzdHJva2U9IiNmNGE1NzQiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8%2BCiAgPCEtLSBTd2ltc3VpdCB0b3AgLS0%2BCiAgPHBhdGggZD0iTTI0NiAyNjggUTI1OCAyNjAgMjcyIDI2OCBRMjY4IDI4MCAyNTggMjgwIFEyNDggMjgwIDI0NiAyNjggWiIgZmlsbD0iI2M0OTU2YSIvPgogIDwhLS0gU2hvcnRzIC0tPgogIDxwYXRoIGQ9Ik0yNDggMjc4IFEyNTggMjgyIDI2OCAyNzggTDI2NSAyOTYgUTI1OCAyOTggMjUyIDI5NiBaIiBmaWxsPSIjOGI2ZjVlIi8%2BCiAgPCEtLSBMZWdzIG9uIGJvYXJkIC0tPgogIDxwYXRoIGQ9Ik0yNTIgMjk1IFEyNDUgMzEwIDI0MCAzMjAiIHN0cm9rZT0iI2Y0YTU3NCIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNMjY1IDI5NSBRMjcyIDMxMCAyNzggMzIwIiBzdHJva2U9IiNmNGE1NzQiIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8%2BCiAgPCEtLSBTdW4gLS0%2BCiAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMTAwIiByPSIzNSIgZmlsbD0iI2Y1Yzg0MiIgb3BhY2l0eT0iMC45Ii8%2BCiAgPGxpbmUgeDE9IjQwMCIgeTE9IjQ4IiB4Mj0iNDAwIiB5Mj0iNTgiIHN0cm9rZT0iI2Y1Yzg0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iNDAwIiB5MT0iMTQyIiB4Mj0iNDAwIiB5Mj0iMTUyIiBzdHJva2U9IiNmNWM4NDIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8%2BCiAgPGxpbmUgeDE9IjM0OCIgeTE9IjEwMCIgeDI9IjM1OCIgeTI9IjEwMCIgc3Ryb2tlPSIjZjVjODQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSI0NDIiIHkxPSIxMDAiIHgyPSI0NTIiIHkyPSIxMDAiIHN0cm9rZT0iI2Y1Yzg0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMzY0IiB5MT0iNjQiIHgyPSIzNzEiIHkyPSI3MSIgc3Ryb2tlPSIjZjVjODQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSI0MjkiIHkxPSIxMjkiIHgyPSI0MzYiIHkyPSIxMzYiIHN0cm9rZT0iI2Y1Yzg0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iNDM2IiB5MT0iNjQiIHgyPSI0MjkiIHkyPSI3MSIgc3Ryb2tlPSIjZjVjODQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSIzNzEiIHkxPSIxMjkiIHgyPSIzNjQiIHkyPSIxMzYiIHN0cm9rZT0iI2Y1Yzg0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIFNwcmF5IGRyb3BsZXRzIC0tPgogIDxjaXJjbGUgY3g9IjMxMCIgY3k9IjMzNSIgcj0iNCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNyIvPgogIDxjaXJjbGUgY3g9IjI5NSIgY3k9IjMyMCIgcj0iMyIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNSIvPgogIDxjaXJjbGUgY3g9IjMyNSIgY3k9IjMyMCIgcj0iMyIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4K%22%2C%20%22sizes%22%3A%20%22any%22%2C%20%22type%22%3A%20%22image%2Fsvg%2Bxml%22%2C%20%22purpose%22%3A%20%22any%20maskable%22%7D%5D%7D">
 <title>🏄🏻‍♀️ 吃吧！能量冲浪手</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
-:root{--bg:#f5f0eb;--bg2:#ede8e1;--bg3:#e5dfd7;--surface:#faf7f3;--text:#2a2520;--text2:#6b6158;--text3:#9b9088;--accent:#8b6f5e;--peak:#4a7c6f;--peak-bg:#e8f4f0;--peak-light:#c8e6de;--low:#8b6f5e;--low-bg:#f4ede8;--low-light:#e6d5cc;--warn:#c4956a;--warn-bg:#fdf3e7;--danger:#b85c4e;--border:rgba(42,37,32,.10);--border2:rgba(42,37,32,.06);--radius:16px;--radius-sm:10px;--shadow:0 2px 16px rgba(42,37,32,.08)}
+:root{
+  --bg:#f5f0eb;--bg2:#ede8e1;--bg3:#e5dfd7;
+  --surface:#faf7f3;
+  --text:#2a2520;--text2:#6b6158;--text3:#9b9088;
+  --accent:#8b6f5e;--accent2:#c4956a;
+  --peak:#4a7c6f;--peak-bg:#e8f4f0;--peak-light:#c8e6de;
+  --low:#8b6f5e;--low-bg:#f4ede8;--low-light:#e6d5cc;
+  --warn:#c4956a;--warn-bg:#fdf3e7;
+  --danger:#b85c4e;--danger-bg:#faeae8;
+  --border:rgba(42,37,32,.10);--border2:rgba(42,37,32,.06);
+  --radius:16px;--radius-sm:10px;--radius-xs:8px;
+  --shadow:0 2px 16px rgba(42,37,32,.08);
+  --shadow-md:0 4px 24px rgba(42,37,32,.14);
+}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html,body{height:100%;overflow:hidden}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6}
+html,body{height:100%;overflow:hidden;background:var(--bg)}
+/* ensure topbar blends seamlessly */
+body{font-family:'DM Sans',sans-serif;color:var(--text);font-size:15px;line-height:1.6}
 .app{display:flex;flex-direction:column;height:100vh;height:100dvh}
-.main{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
-.page{display:none;padding:20px 16px 100px;max-width:480px;margin:0 auto}
+.main{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;background:var(--bg)}
+.page{display:none;padding:12px 16px 100px;max-width:480px;margin:0 auto}
 .page.active{display:block}
+
+/* NAV */
 .nav{position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--border);display:flex;z-index:100;padding-bottom:env(safe-area-inset-bottom)}
 .nav-item{flex:1;display:flex;flex-direction:column;align-items:center;padding:10px 4px 8px;gap:3px;cursor:pointer;color:var(--text3);font-size:10px;font-weight:500;border:none;background:none;transition:color .2s}
 .nav-item.active{color:var(--accent)}
 .nav-item svg{width:22px;height:22px;stroke-width:1.8}
-.topbar{padding:16px 16px 0;max-width:480px;margin:0 auto}
-.topbar-title{font-family:'Noto Serif SC',serif;font-size:20px;display:flex;align-items:center;justify-content:space-between}
-.topbar-date{font-size:12px;color:var(--text3);font-family:'DM Sans',sans-serif}
+
+/* TOPBAR */
+.topbar{padding:14px 16px 4px;max-width:480px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;background:var(--bg)}
+.topbar-brand{font-family:'Noto Serif SC',serif;font-size:17px;color:var(--text);font-weight:600}
+.topbar-date{font-size:12px;color:var(--text3)}
+
+/* REFRESH BTN */
+.refresh-btn{background:none;border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:12px;color:var(--text3);cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;transition:all .2s}
+.refresh-btn:active{background:var(--bg2);color:var(--text)}
+.refresh-btn.spinning svg{animation:spin .7s linear infinite}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+
+/* MODE CARD */
+.mode-card{border-radius:20px;padding:22px 22px 18px;margin-bottom:14px;cursor:pointer;transition:transform .15s,box-shadow .15s;border:none;width:100%;text-align:left;box-shadow:var(--shadow-md);position:relative;overflow:hidden}
+.mode-card:active{transform:scale(.97)}
+.mode-card-peak{background:linear-gradient(135deg,#5a8a7d 0%,#3a6a60 100%)}
+.mode-card-low{background:linear-gradient(135deg,#9b7f6e 0%,#6e4e40 100%)}
+.mode-card-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.18);color:rgba(255,255,255,.9);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:600;letter-spacing:.08em;margin-bottom:10px}
+.mode-card-title{font-family:'Noto Serif SC',serif;font-size:26px;color:white;font-weight:600;margin-bottom:6px;line-height:1.2}
+.mode-card-sub{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:16px}
+.mode-card-hint{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:6px 16px;font-size:12px;color:rgba(255,255,255,.85);font-weight:500}
+
+/* CARDS */
 .card{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:16px;margin-bottom:12px;box-shadow:var(--shadow)}
-.card-title{font-size:12px;font-weight:500;letter-spacing:.08em;color:var(--text3);margin-bottom:12px;text-transform:uppercase}
-.mode-banner{border-radius:var(--radius);padding:16px 20px;margin-bottom:16px;cursor:pointer;transition:transform .15s;border:1.5px solid}
-.mode-banner:active{transform:scale(.98)}
-.mode-peak-banner{background:var(--peak-bg);border-color:var(--peak-light)}
-.mode-low-banner{background:var(--low-bg);border-color:var(--low-light)}
-.mode-label{font-size:11px;font-weight:500;letter-spacing:.08em;margin-bottom:4px}
-.mode-peak-banner .mode-label{color:var(--peak)}
-.mode-low-banner .mode-label{color:var(--low)}
-.mode-title{font-family:'Noto Serif SC',serif;font-size:18px;margin-bottom:4px}
-.mode-sub{font-size:13px;color:var(--text2)}
-.mode-switch-hint{font-size:11px;color:var(--text3);margin-top:8px}
-.check-item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border2);cursor:pointer;transition:opacity .2s}
+.card-title{font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--text3);margin-bottom:12px;text-transform:uppercase}
+
+/* CHECKLIST */
+.check-item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border2);cursor:pointer}
 .check-item:last-child{border-bottom:none;padding-bottom:0}
-.check-item.done{opacity:.45}
-.check-box{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:all .2s;background:var(--bg2)}
+.check-item.done{opacity:.4}
+.check-box{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:all .2s;background:#fff}
 .check-item.done .check-box{background:var(--peak);border-color:var(--peak)}
 .check-box svg{width:12px;height:12px;stroke:white;display:none}
 .check-item.done .check-box svg{display:block}
 .check-label{font-size:14px;line-height:1.4}
 .check-note{font-size:12px;color:var(--text3);margin-top:2px}
+
+/* QUICK GRID */
 .quick-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
 .quick-card{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:14px 12px;cursor:pointer;transition:all .15s;text-align:center}
-.quick-card:active{background:var(--bg2);transform:scale(.98)}
+.quick-card:active{background:var(--bg2);transform:scale(.97)}
 .quick-card-icon{font-size:22px;margin-bottom:4px}
 .quick-card-label{font-size:12px;color:var(--text2);font-weight:500}
-.log-btn{width:100%;padding:13px 16px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--surface);color:var(--text);font-size:14px;font-family:inherit;cursor:pointer;text-align:left;display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;transition:all .15s}
+
+/* LOG BTN */
+.log-btn{width:100%;padding:13px 16px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--surface);color:var(--text);font-size:14px;font-family:inherit;cursor:pointer;text-align:left;display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;transition:all .15s}
+.log-btn:last-child{margin-bottom:0}
 .log-btn:active{background:var(--bg2)}
-.log-btn-icon{font-size:18px}
+.log-btn-icon{font-size:18px;flex-shrink:0}
 .log-btn-label{flex:1;padding:0 12px}
-.log-btn-arrow{color:var(--text3)}
+.log-btn-right{color:var(--text3);font-size:13px}
+
+/* STATS */
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
 .stat-card{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:14px 12px}
 .stat-label{font-size:11px;color:var(--text3);margin-bottom:4px}
 .stat-value{font-family:'Noto Serif SC',serif;font-size:22px}
 .stat-unit{font-size:12px;color:var(--text3)}
 .stat-change{font-size:11px;margin-top:2px}
-.stat-change.up{color:var(--warn)}
-.stat-change.down{color:var(--peak)}
+.stat-change.up{color:var(--warn)}.stat-change.down{color:var(--peak)}
+
+/* CHART */
 .chart-wrap{position:relative;height:200px;margin:8px 0}
+
+/* LOG ENTRY */
 .log-entry{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border2)}
 .log-entry:last-child{border-bottom:none}
-.log-dot{width:8px;height:8px;border-radius:50%;background:var(--warn);margin-top:6px;flex-shrink:0}
-.log-entry-date{font-size:11px;color:var(--text3)}
-.log-entry-text{font-size:13px;line-height:1.5}
+.log-dot{width:8px;height:8px;border-radius:50%;background:var(--accent2);margin-top:6px;flex-shrink:0}
+.log-date{font-size:11px;color:var(--text3)}
+.log-text{font-size:13px;line-height:1.5}
 .log-actions{display:flex;gap:6px;margin-top:4px}
-.log-action-btn{font-size:11px;color:var(--text3);background:none;border:1px solid var(--border);border-radius:6px;padding:2px 8px;cursor:pointer;font-family:inherit}
-.log-action-btn:active{color:var(--danger);border-color:var(--danger)}
-.modal-overlay{position:fixed;inset:0;background:rgba(42,37,32,.45);z-index:200;display:none;align-items:flex-end;justify-content:center}
+.log-act{font-size:11px;color:var(--text3);background:none;border:1px solid var(--border);border-radius:6px;padding:2px 8px;cursor:pointer;font-family:inherit;transition:all .15s}
+.log-act:active{color:var(--danger);border-color:var(--danger)}
+
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(42,37,32,.5);z-index:200;display:none;align-items:flex-end;justify-content:center}
 .modal-overlay.open{display:flex}
-.modal{background:var(--surface);border-radius:24px 24px 0 0;padding:24px 20px 40px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;animation:slideUp .25s ease}
+.modal{background:var(--surface);border-radius:24px 24px 0 0;padding:24px 20px 40px;width:100%;max-width:480px;max-height:92vh;overflow-y:auto;animation:slideUp .25s ease}
 @keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
 .modal-handle{width:36px;height:4px;background:var(--bg3);border-radius:2px;margin:0 auto 20px}
 .modal-title{font-family:'Noto Serif SC',serif;font-size:18px;margin-bottom:20px}
@@ -84,6 +128,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
 .modal-input:focus,.modal-select:focus,.modal-textarea:focus{border-color:var(--accent)}
 .modal-textarea{min-height:80px;resize:none}
 .modal-select{appearance:none}
+.date-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .btn-primary{width:100%;padding:14px;background:var(--accent);color:white;border:none;border-radius:var(--radius-sm);font-size:15px;font-weight:500;font-family:inherit;cursor:pointer;margin-top:20px;transition:opacity .2s}
 .btn-primary:active{opacity:.85}
 .btn-ghost{width:100%;padding:12px;background:none;color:var(--text2);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:14px;font-family:inherit;cursor:pointer;margin-top:8px}
@@ -91,8 +136,34 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
 .emoji-row{display:flex;gap:8px;margin-top:4px;flex-wrap:wrap}
 .emoji-btn{padding:8px 12px;border-radius:20px;border:1.5px solid var(--border);background:var(--bg2);cursor:pointer;font-size:14px;transition:all .15s}
 .emoji-btn.selected{border-color:var(--accent);background:var(--low-bg)}
-.timer-display{font-family:'Noto Serif SC',serif;font-size:48px;text-align:center;margin:20px 0}
-.timer-sub{text-align:center;font-size:13px;color:var(--text3);margin-bottom:20px}
+.meal-slots{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
+.meal-slot{padding:10px 12px;border-radius:var(--radius-xs);border:1.5px solid var(--border);background:#fff;cursor:pointer;font-size:13px;font-family:inherit;text-align:center;transition:all .15s}
+.meal-slot.selected{border-color:var(--peak);background:var(--peak-bg);color:var(--peak);font-weight:500}
+.meal-slot.used{background:var(--bg3);color:var(--text3);cursor:not-allowed;border-color:var(--border2)}
+
+/* PROGRESS BARS */
+.pbar-row{margin-bottom:10px}
+.pbar-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.pbar-label{font-size:12px;color:var(--text2);font-weight:500}
+.pbar-value{font-size:12px;color:var(--text);font-weight:500}
+.pbar-track{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.pbar-fill{height:100%;border-radius:3px;transition:width .5s}
+.pbar-note{font-size:11px;color:var(--text3);margin-top:3px}
+
+/* MISC */
+.tag{display:inline-block;padding:4px 10px;border-radius:20px;font-size:12px;margin:2px}
+.tag-peak{background:var(--peak-bg);color:var(--peak)}
+.tag-low{background:var(--low-bg);color:var(--low)}
+.tag-warn{background:var(--warn-bg);color:#8b6233}
+.sec-break{display:flex;align-items:center;gap:10px;margin:16px 0 10px}
+.sec-line{flex:1;height:1px;background:var(--border2)}
+.sec-txt{font-size:11px;color:var(--text3);white-space:nowrap;font-weight:500}
+.empty{text-align:center;padding:28px 20px;color:var(--text3)}
+.empty-icon{font-size:30px;margin-bottom:8px}
+.empty-text{font-size:14px}
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-80px);background:var(--text);color:white;padding:12px 20px;border-radius:20px;font-size:13px;z-index:300;transition:transform .3s;max-width:90vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;box-shadow:var(--shadow-md)}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.backup-area{width:100%;height:110px;font-size:11px;font-family:monospace;padding:10px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--bg2);color:var(--text2);resize:none;outline:none}
 .affirm-box{background:var(--warn-bg);border:1px solid rgba(196,149,106,.3);border-radius:var(--radius);padding:16px;margin-bottom:12px}
 .affirm-text{font-family:'Noto Serif SC',serif;font-size:15px;line-height:1.8}
 .binge-step{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--border2);align-items:flex-start}
@@ -100,47 +171,77 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
 .binge-num{width:28px;height:28px;border-radius:50%;background:var(--low-bg);color:var(--low);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;flex-shrink:0}
 .binge-text{font-size:14px;line-height:1.5}
 .binge-note{font-size:12px;color:var(--text3);margin-top:2px}
-.tag{display:inline-block;padding:4px 10px;border-radius:20px;font-size:12px;margin:2px}
-.tag-peak{background:var(--peak-bg);color:var(--peak)}
-.tag-low{background:var(--low-bg);color:var(--low)}
-.tag-warn{background:var(--warn-bg);color:#8b6233}
-.section-break{display:flex;align-items:center;gap:10px;margin:16px 0 10px}
-.section-break-line{flex:1;height:1px;background:var(--border2)}
-.section-break-text{font-size:11px;color:var(--text3);white-space:nowrap;font-weight:500}
-.empty{text-align:center;padding:30px 20px;color:var(--text3)}
-.empty-icon{font-size:32px;margin-bottom:10px}
-.empty-text{font-size:14px}
-.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-80px);background:var(--text);color:white;padding:12px 20px;border-radius:20px;font-size:13px;z-index:300;transition:transform .3s;max-width:90vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.toast.show{transform:translateX(-50%) translateY(0)}
-.backup-area{width:100%;height:110px;font-size:11px;font-family:monospace;padding:10px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--bg2);color:var(--text2);resize:none;outline:none}
-/* Progress bar rows in summary */
-.pbar-row{margin-bottom:10px}
-.pbar-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
-.pbar-label{font-size:12px;color:var(--text2)}
-.pbar-value{font-size:12px;font-weight:500;color:var(--text)}
-.pbar-track{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
-.pbar-fill{height:100%;border-radius:3px;transition:width .5s}
-.pbar-note{font-size:11px;color:var(--text3);margin-top:3px}
+.timer-display{font-family:'Noto Serif SC',serif;font-size:48px;text-align:center;margin:20px 0}
+.timer-sub{text-align:center;font-size:13px;color:var(--text3);margin-bottom:20px}
+.morning-banner{background:linear-gradient(135deg,#5a8a7d,#3a6a60);border-radius:var(--radius);padding:16px 18px;margin-bottom:14px;display:none;position:relative}
+.morning-banner.show{display:block}
+.morning-title{font-family:'Noto Serif SC',serif;font-size:15px;color:white;margin-bottom:6px}
+.morning-body{font-size:13px;color:rgba(255,255,255,.85);line-height:1.6;white-space:pre-line}
+.morning-close{position:absolute;top:12px;right:14px;background:none;border:none;color:rgba(255,255,255,.7);font-size:20px;cursor:pointer;line-height:1}
+/* data section tabs */
+.data-tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.data-tab{padding:6px 14px;border-radius:20px;border:1px solid var(--border);background:var(--surface);font-size:13px;cursor:pointer;color:var(--text2);font-family:inherit;transition:all .15s}
+.data-tab.active{background:var(--accent);color:white;border-color:var(--accent)}
+.data-section{display:none}
+.data-section.active{display:block}
 </style>
+<script>
+(function(){
+  // 生成 PNG apple-touch-icon（Safari 不支持 SVG apple-touch-icon）
+  try{
+    const c=document.createElement('canvas');c.width=180;c.height=180;
+    const ctx=c.getContext('2d');
+    // 背景
+    const r=c.width*0.22;
+    ctx.beginPath();ctx.moveTo(r,0);ctx.lineTo(c.width-r,0);ctx.quadraticCurveTo(c.width,0,c.width,r);
+    ctx.lineTo(c.width,c.height-r);ctx.quadraticCurveTo(c.width,c.height,c.width-r,c.height);
+    ctx.lineTo(r,c.height);ctx.quadraticCurveTo(0,c.height,0,c.height-r);
+    ctx.lineTo(0,r);ctx.quadraticCurveTo(0,0,r,0);ctx.closePath();
+    const grad=ctx.createLinearGradient(0,0,c.width,c.height);
+    grad.addColorStop(0,'#5a8a7d');grad.addColorStop(1,'#3a6a60');
+    ctx.fillStyle=grad;ctx.fill();
+    // 海浪
+    ctx.fillStyle='rgba(45,90,80,0.5)';
+    ctx.beginPath();ctx.moveTo(0,115);
+    for(let x=0;x<=180;x+=30){ctx.quadraticCurveTo(x+15,105,x+30,115);}
+    ctx.lineTo(180,180);ctx.lineTo(0,180);ctx.closePath();ctx.fill();
+    // emoji 文字
+    ctx.font='88px serif';ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText('🏄',90,82);
+    // 设置图标
+    const link=document.querySelector('link[rel="apple-touch-icon"]')||document.createElement('link');
+    link.rel='apple-touch-icon';link.href=c.toDataURL('image/png');
+    if(!link.parentNode)document.head.appendChild(link);
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 <div class="app">
   <div class="main" id="mainScroll">
     <div class="topbar">
-      <div class="topbar-title">
-        <span>🏄🏻‍♀️ 吃吧！能量冲浪手</span>
+      <span class="topbar-brand">🏄🏻‍♀️ 吃吧！能量冲浪手</span>
+      <div style="display:flex;align-items:center;gap:8px">
         <span class="topbar-date" id="todayDate"></span>
+        <button class="refresh-btn" id="refreshBtn" onclick="doRefresh()">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>刷新
+        </button>
       </div>
     </div>
 
     <!-- TODAY -->
     <div class="page active" id="page-today">
-      <div style="height:12px"></div>
-      <div class="mode-banner" id="modeBanner" onclick="openModeSwitch()">
-        <div class="mode-label" id="modeLabel"></div>
-        <div class="mode-title" id="modeTitle"></div>
-        <div class="mode-sub" id="modeSub"></div>
-        <div class="mode-switch-hint">点击切换模式 →</div>
+      <div style="height:8px"></div>
+      <div class="morning-banner" id="morningBanner">
+        <button class="morning-close" onclick="dismissMorning()">×</button>
+        <div class="morning-title" id="morningTitle"></div>
+        <div class="morning-body" id="morningBody"></div>
+      </div>
+      <div class="mode-card mode-card-peak" id="modeBanner" onclick="openModeSwitch()" role="button">
+        <div class="mode-card-tag"><span id="modeEmoji">⚡</span><span id="modeTagTxt">高峰模式</span></div>
+        <div class="mode-card-title" id="modeTitle">今天我有能量</div>
+        <div class="mode-card-sub" id="modeSub">推进期 · 按高峰清单认真执行</div>
+        <div class="mode-card-hint">切换状态 →</div>
       </div>
       <div class="card">
         <div class="card-title">今天的最低任务</div>
@@ -154,15 +255,17 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
           <div class="quick-card" onclick="openModal('measure')"><div class="quick-card-icon">📏</div><div class="quick-card-label">记录围度</div></div>
           <div class="quick-card" onclick="openBingeHelper()"><div class="quick-card-icon">💭</div><div class="quick-card-label">暴食感来了</div></div>
         </div>
-        <button class="log-btn" onclick="openModal('binge')"><span class="log-btn-icon">🌊</span><span class="log-btn-label">记录饮食状态</span><span class="log-btn-arrow">›</span></button>
-        <button class="log-btn" onclick="openModal('fasting')"><span class="log-btn-icon">🍽️</span><span class="log-btn-label">记录今天第一次进食</span><span class="log-btn-arrow">›</span></button>
-        <button class="log-btn" style="margin-bottom:0" onclick="openModal('lastmeal')"><span class="log-btn-icon">🌙</span><span class="log-btn-label">登记昨晚最后进食时间</span><span class="log-btn-arrow">›</span></button>
+        <button class="log-btn" onclick="openModal('meal')"><span class="log-btn-icon">🍽️</span><span class="log-btn-label">记录进食</span><span class="log-btn-right">›</span></button>
+        <button class="log-btn" onclick="openModal('fasting')"><span class="log-btn-icon">🕐</span><span class="log-btn-label">记录今天第一次进食时间</span><span class="log-btn-right">›</span></button>
+        <button class="log-btn" onclick="openModal('lastmeal')"><span class="log-btn-icon">🌙</span><span class="log-btn-label">登记昨晚最后进食时间</span><span class="log-btn-right">›</span></button>
+        <button class="log-btn" onclick="openModal('binge')"><span class="log-btn-icon">🌊</span><span class="log-btn-label">记录饮食状态</span><span class="log-btn-right">›</span></button>
       </div>
       <div class="card">
-        <div class="card-title" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer" onclick="toggleSummary()">
+        <div class="card-title" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;margin-bottom:0" onclick="toggleSummary()">
           <span>今日小结</span>
           <span id="summaryToggleIcon" style="font-size:16px;color:var(--text3);transition:transform .2s">▾</span>
         </div>
+        <div style="height:10px"></div>
         <div id="todayProgress"></div>
         <div id="todayDetails"></div>
       </div>
@@ -170,43 +273,93 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
 
     <!-- DATA -->
     <div class="page" id="page-data">
-      <div style="height:12px"></div>
+      <div style="height:8px"></div>
       <div class="stat-grid">
         <div class="stat-card"><div class="stat-label">最新体重</div><div class="stat-value" id="latestWeight">—</div><div class="stat-change" id="weightChange"></div></div>
         <div class="stat-card"><div class="stat-label">本周运动</div><div class="stat-value" id="weekExercise">0</div><div class="stat-unit">次</div></div>
         <div class="stat-card"><div class="stat-label">本月记录</div><div class="stat-value" id="monthLogs">0</div><div class="stat-unit">天</div></div>
         <div class="stat-card"><div class="stat-label">连续记录</div><div class="stat-value" id="streak">0</div><div class="stat-unit">天</div></div>
       </div>
-      <div class="card"><div class="card-title">体重趋势</div><div class="chart-wrap"><canvas id="weightChart"></canvas></div></div>
-      <div class="card"><div class="card-title">围度变化</div><div class="chart-wrap"><canvas id="measureChart"></canvas></div></div>
       <div class="card">
-        <div class="card-title">能量状态趋势</div>
-        <div class="chart-wrap"><canvas id="energyChart"></canvas></div>
-        <div style="font-size:11px;color:var(--text3);margin-top:4px;display:flex;gap:14px">
-          <span style="color:var(--peak)">■ 高峰日</span><span style="color:var(--low)">■ 低谷日</span><span style="color:var(--danger)">■ 低能量日</span>
+        <div class="card-title" style="margin-bottom:10px">趋势图表</div>
+        <div class="data-tabs">
+          <button class="data-tab active" onclick="switchDataTab('weight',this)">体重</button>
+          <button class="data-tab" onclick="switchDataTab('measure',this)">围度</button>
+          <button class="data-tab" onclick="switchDataTab('energy',this)">能量</button>
+          <button class="data-tab" onclick="switchDataTab('combined',this)">综合</button>
         </div>
+        <div class="data-section active" id="dsWeight"><div class="chart-wrap"><canvas id="weightChart"></canvas></div></div>
+        <div class="data-section" id="dsMeasure"><div class="chart-wrap"><canvas id="measureChart"></canvas></div></div>
+        <div class="data-section" id="dsEnergy">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+            <span style="font-size:12px;color:var(--text3)">显示天数</span>
+            <div style="display:flex;gap:4px;align-items:center">
+              <button onclick="energyZoom(-1)" style="width:28px;height:28px;border-radius:50%;border:1px solid var(--border);background:var(--surface);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text2)">−</button>
+              <span id="energyDaysLabel" style="font-size:12px;color:var(--text);font-weight:500;min-width:32px;text-align:center">1天</span>
+              <button onclick="energyZoom(1)" style="width:28px;height:28px;border-radius:50%;border:1px solid var(--border);background:var(--surface);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text2)">+</button>
+            </div>
+          </div>
+          <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+            <canvas id="energyChart"></canvas>
+          </div>
+          <div style="font-size:11px;color:var(--text3);margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
+            <span style="color:var(--peak)">■ 高峰时段</span><span style="color:var(--low)">■ 低谷时段</span><span>— 能量趋势线</span>
+          </div>
+        </div>
+        <div class="data-section" id="dsCombined">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+    <span style="font-size:12px;color:var(--text3)">显示天数</span>
+    <div style="display:flex;gap:4px">
+      <button class="data-tab active" id="cDays7" onclick="setCombinedDays(7,this)" style="padding:4px 10px;font-size:11px">7天</button>
+      <button class="data-tab" id="cDays14" onclick="setCombinedDays(14,this)" style="padding:4px 10px;font-size:11px">14天</button>
+      <button class="data-tab" id="cDays30" onclick="setCombinedDays(30,this)" style="padding:4px 10px;font-size:11px">30天</button>
+    </div>
+  </div>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+    <canvas id="combinedChart" style="min-width:320px"></canvas>
+  </div>
+  <div style="font-size:11px;color:var(--text3);margin-top:8px;display:flex;gap:12px;flex-wrap:wrap;line-height:1.8">
+    <span style="color:#c0392b">▮ 体重减少</span><span style="color:#27ae60">▮ 体重增加</span>
+    <span style="color:var(--peak)">■ 高峰为主</span><span style="color:var(--low)">■ 低谷为主</span>
+    <span style="color:#c4956a">▬ 5日均线</span>
+  </div>
+  <div style="font-size:11px;color:var(--text3);margin-top:2px">蜡烛=昨天空腹→今天空腹，影线=当日最高/低，填充色=当天高峰/低谷占比</div>
+</div>
       </div>
-      <div class="card"><div class="card-title">运动记录</div><div id="exerciseLogList"></div></div>
+
+      <!-- All records by category -->
+      <div class="card">
+        <div class="card-title" style="margin-bottom:10px">所有记录</div>
+        <div class="data-tabs">
+          <button class="data-tab active" onclick="switchRecordTab('all',this)">全部</button>
+          <button class="data-tab" onclick="switchRecordTab('meal',this)">饮食</button>
+          <button class="data-tab" onclick="switchRecordTab('exercise',this)">运动</button>
+          <button class="data-tab" onclick="switchRecordTab('weight',this)">体重</button>
+          <button class="data-tab" onclick="switchRecordTab('binge',this)">状态</button>
+          <button class="data-tab" onclick="switchRecordTab('measure',this)">围度</button>
+        </div>
+        <div id="allRecordsList"></div>
+      </div>
     </div>
 
     <!-- GUIDE -->
     <div class="page" id="page-guide">
-      <div style="height:12px"></div>
+      <div style="height:8px"></div>
       <div class="card">
         <div class="card-title">暴食冲动来了？10 分钟缓冲</div>
         <div class="binge-step"><div class="binge-num">1</div><div><div class="binge-text">先喝一大杯水或热饮</div><div class="binge-note">胃部填充感会降低冲动强度</div></div></div>
         <div class="binge-step"><div class="binge-num">2</div><div><div class="binge-text">等 10 分钟，做另一件事</div><div class="binge-note">走到另一个房间、洗个手、刷一个视频</div></div></div>
-        <div class="binge-step"><div class="binge-num">3</div><div><div class="binge-text">还想吃？先吃蛋白质垫一下</div><div class="binge-note">鸡蛋 / 毛豆 / 酸奶，很多时候之后就不想暴食了</div></div></div>
-        <div class="binge-step"><div class="binge-num">4</div><div><div class="binge-text">如果真的暴食了</div><div class="binge-note">什么都不做，不惩罚，不节食，直接继续明天</div></div></div>
-        <button class="btn-primary" onclick="openModal('binge')">暴食了，记录一下</button>
+        <div class="binge-step"><div class="binge-num">3</div><div><div class="binge-text">还想吃？先吃蛋白质垫一下</div><div class="binge-note">鸡蛋 / 毛豆 / 酸奶</div></div></div>
+        <div class="binge-step"><div class="binge-num">4</div><div><div class="binge-text">如果真的暴食了</div><div class="binge-note">不惩罚，不节食，直接继续明天</div></div></div>
+        <button class="btn-primary" onclick="openModal('binge')" style="margin-top:16px">暴食了，记录一下</button>
       </div>
       <div class="card">
-        <div class="card-title">备好这些 — 替代暴食冲动</div>
+        <div class="card-title">备好这些</div>
         <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
           <span class="tag tag-peak">🥒 黄瓜胡萝卜</span><span class="tag tag-peak">🍿 少油爆米花</span><span class="tag tag-peak">🫛 冷冻毛豆</span><span class="tag tag-warn">🍫 黑巧（少量）</span><span class="tag tag-warn">🍓 水果</span><span class="tag tag-low">🥛 热牛奶</span><span class="tag tag-low">🍵 热茶</span><span class="tag tag-low">🥚 水煮蛋</span>
         </div>
       </div>
-      <div class="section-break"><div class="section-break-line"></div><div class="section-break-text">双模式指南</div><div class="section-break-line"></div></div>
+      <div class="sec-break"><div class="sec-line"></div><div class="sec-txt">双模式指南</div><div class="sec-line"></div></div>
       <div class="card" style="border-left:3px solid var(--peak)">
         <div class="card-title" style="color:var(--peak)">⚡ 高峰模式</div>
         <div class="check-item" style="cursor:default"><div class="check-box" style="background:var(--peak);border-color:var(--peak)"><svg viewBox="0 0 12 12" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,6 5,9 10,3"/></svg></div><div><div class="check-label">进食窗口 8 小时内</div></div></div>
@@ -226,18 +379,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
       </div>
     </div>
 
-    <!-- HISTORY -->
+    <!-- HISTORY / BACKUP -->
     <div class="page" id="page-history">
-      <div style="height:12px"></div>
+      <div style="height:8px"></div>
       <div class="card">
         <div class="card-title">数据备份 / 迁移</div>
-        <p style="font-size:13px;color:var(--text2);margin-bottom:14px;line-height:1.6">导出后复制文字，换设备时粘贴导入即可恢复。</p>
-        <div style="display:flex;gap:10px;margin-bottom:10px">
-          <button class="log-btn" style="flex:1;margin-bottom:0" onclick="exportData()"><span class="log-btn-icon">📤</span><span class="log-btn-label">导出</span></button>
+        <p style="font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.6">数据保存在<strong>本设备浏览器</strong>中，换设备须手动备份导入。</p>
+        <div style="display:flex;gap:8px;margin-bottom:10px">
+          <button class="log-btn" style="flex:1;margin-bottom:0" onclick="exportData()"><span class="log-btn-icon">📤</span><span class="log-btn-label">导出文字备份</span></button>
           <button class="log-btn" style="flex:1;margin-bottom:0" onclick="showImport()"><span class="log-btn-icon">📥</span><span class="log-btn-label">导入</span></button>
         </div>
         <div id="backupBox" style="display:none">
-          <div class="modal-label" style="margin-top:0">备份数据（点击全选后复制）</div>
+          <div class="modal-label" style="margin-top:0">备份数据（点击全选后复制保存）</div>
           <textarea class="backup-area" id="backupText" readonly onclick="this.select()"></textarea>
         </div>
         <div id="importBox" style="display:none">
@@ -247,18 +400,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
         </div>
         <div id="backupStatus" style="font-size:13px;margin-top:8px;display:none"></div>
         <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border2)">
-          <div style="font-size:12px;color:var(--text3);margin-bottom:8px">也可以下载文件备份</div>
           <button class="log-btn" style="margin-bottom:6px" onclick="exportFile()"><span class="log-btn-icon">💾</span><span class="log-btn-label">下载 JSON 文件</span></button>
           <input type="file" id="importFile" accept=".json" style="display:none" onchange="importFromFile(event)">
           <button class="log-btn" style="margin-bottom:0" onclick="document.getElementById('importFile').click()"><span class="log-btn-icon">📂</span><span class="log-btn-label">从文件导入</span></button>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-title" style="display:flex;justify-content:space-between;align-items:center">
-          <span>历史记录</span>
-          <button onclick="exportPDF()" style="font-size:12px;color:var(--accent);background:none;border:none;cursor:pointer;font-family:inherit">导出 PDF →</button>
+        <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border2)">
+          <button class="log-btn" style="margin-bottom:0" onclick="exportPDF()"><span class="log-btn-icon">📄</span><span class="log-btn-label">导出 PDF 趋势报告</span></button>
         </div>
-        <div id="historyList"></div>
       </div>
     </div>
   </div>
@@ -267,7 +415,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
     <button class="nav-item active" onclick="switchPage('today',this)"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>今天</button>
     <button class="nav-item" onclick="switchPage('data',this)"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>数据</button>
     <button class="nav-item" onclick="switchPage('guide',this)"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>指南</button>
-    <button class="nav-item" onclick="switchPage('history',this)"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>历史</button>
+    <button class="nav-item" onclick="switchPage('history',this)"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/></svg>备份</button>
   </nav>
 </div>
 
@@ -277,24 +425,66 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
 <div class="toast" id="toast"></div>
 
 <script>
-// ── STORAGE ──────────────────────────────────────────────
+// ── STORAGE ───────────────────────────────────────────────
+const PFX='nrg2_'; // prefix v2 — fresh start, no stale data
 const DB={
-  get(k){try{const v=localStorage.getItem('surf_'+k);return v?JSON.parse(v):null}catch{return null}},
-  set(k,v){try{localStorage.setItem('surf_'+k,JSON.stringify(v))}catch(e){console.warn(e)}},
-  push(k,item){const a=this.get(k)||[];const e={...item,id:Date.now()+'_'+Math.random().toString(36).slice(2),date:new Date().toISOString()};a.push(e);this.set(k,a);return a},
-  removeById(k,id){const a=(this.get(k)||[]).filter(x=>x.id!==id);this.set(k,a);return a},
-  updateById(k,id,f){const a=this.get(k)||[];const i=a.findIndex(x=>x.id===id);if(i>=0){a[i]={...a[i],...f};this.set(k,a)}return a},
-  all(){const keys=['mode','weights','exercises','measures','logs','checkedToday','fasting','energyLog','summaryVisible'];const d={_v:2,_at:new Date().toISOString()};keys.forEach(k=>{const v=this.get(k);if(v!==null)d[k]=v});return d},
-  restore(d){['mode','weights','exercises','measures','logs','checkedToday','fasting','energyLog','summaryVisible'].forEach(k=>{if(k in d)this.set(k,d[k])})}
+  get(k){try{const v=localStorage.getItem(PFX+k);return v!==null?JSON.parse(v):null}catch{return null}},
+  set(k,v){try{localStorage.setItem(PFX+k,JSON.stringify(v));return true}catch(e){console.warn('storage',e);return false}},
+  del(k){localStorage.removeItem(PFX+k)},
+  push(k,item){
+    const a=this.get(k)||[];
+    // date resolution: item._isoDate overrides, else build from item.date+item.time or now
+    let iso=item._isoDate;
+    if(!iso){
+      const dStr=item._date||todayDateStr();
+      const tStr=item._time||nowTimeStr();
+      iso=parseDateTimeToISO(dStr,tStr);
+    }
+    const e={...item,id:Date.now()+'_'+Math.random().toString(36).slice(2),date:iso};
+    delete e._isoDate;delete e._date;delete e._time;
+    a.push(e);this.set(k,a);return a;
+  },
+  removeById(k,id){const a=(this.get(k)||[]).filter(x=>x.id!==id);this.set(k,a)},
+  updateById(k,id,f){const a=this.get(k)||[];const i=a.findIndex(x=>x.id===id);if(i>=0){a[i]={...a[i],...f};this.set(k,a)}},
+  all(){
+    const keys=['mode','weights','exercises','measures','logs','checkedToday','fasting','energyEvents','summaryVisible','meals','morningDismissed','proteinChecks'];
+    const d={_v:4,_at:new Date().toISOString()};
+    keys.forEach(k=>{const v=this.get(k);if(v!==null)d[k]=v});
+    return d;
+  },
+  restore(d){
+    ['mode','weights','exercises','measures','logs','checkedToday','fasting','energyEvents','summaryVisible','meals','morningDismissed','proteinChecks'].forEach(k=>{if(k in d)this.set(k,d[k])});
+  }
 };
+
+// ── DATE/TIME HELPERS ─────────────────────────────────────
+function todayDateStr(){const d=new Date();return d.toISOString().slice(0,10)}
+function nowTimeStr(){const d=new Date();return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
+function parseDateTimeToISO(dateStr,timeStr){
+  // dateStr: YYYY-MM-DD, timeStr: HH:MM
+  const[y,mo,day]=dateStr.split('-').map(Number);
+  const[h,m]=timeStr.split(':').map(Number);
+  return new Date(y,mo-1,day,h,m,0).toISOString();
+}
+function t2m(t){const[h,m]=t.split(':').map(Number);return h*60+m}
+function m2s(m){m=((m%1440)+1440)%1440;return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')}
+function fmtDur(m){m=Math.abs(m);const h=Math.floor(m/60),mm=m%60;return h>0?h+'h'+(mm>0?mm+'m':''):mm+'m'}
+function nowMin(){const n=new Date();return n.getHours()*60+n.getMinutes()}
+function dateLabel(d){return`${d.getMonth()+1}/${d.getDate()}`}
+function dtLabel(d){return`${d.getMonth()+1}月${d.getDate()}日 ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`}
+
+// Offset date string from today: 0=today,1=yesterday,...
+function dateStrOffset(offset){const d=new Date();d.setDate(d.getDate()-offset);return d.toISOString().slice(0,10)}
+function dateKeyFromStr(s){return new Date(s).toDateString()}
 
 // ── STATE ─────────────────────────────────────────────────
 let currentMode=DB.get('mode')||'peak';
 let summaryVisible=DB.get('summaryVisible')!==false;
-let wChart=null,mChart=null,eChart=null;
+let wChart=null,mChart=null;
 const todayKey=new Date().toDateString();
 let checkedItems=DB.get('checkedToday')||{};
 if(checkedItems._date!==todayKey){checkedItems={_date:todayKey};DB.set('checkedToday',checkedItems)}
+let currentRecordFilter='all';
 
 const LISTS={
   peak:[
@@ -303,7 +493,7 @@ const LISTS={
     {id:'window',label:'保持进食窗口 8 小时内',note:'以今天第一次进食时间为基准'},
     {id:'move',label:'运动 20 分钟以上',note:'任何形式都算'},
     {id:'sleep',label:'睡前 1h 切换低刺激',note:'降低屏幕亮度就行'},
-    {id:'light',label:'起床后见自然光 5 分钟',note:'拉开窗帘坐着就够'},
+    {id:'light',label:'起床后见自然光 5 分钟',note:'拉开窗帘就够'},
   ],
   low:[
     {id:'water',label:'喝够水（哪怕 3 杯）',note:'这是今天唯一必须做的事'},
@@ -313,126 +503,217 @@ const LISTS={
   ]
 };
 
-// ── HELPERS ───────────────────────────────────────────────
-// Parse "HH:MM" on a given Date to minutes-since-midnight
-function timeToMin(t){const[h,m]=t.split(':').map(Number);return h*60+m}
-// Format minutes-since-midnight to "HH:MM"
-function minToStr(m){m=((m%1440)+1440)%1440;return`${String(Math.floor(m/60)).padStart(2,'0')}:${String(m%60).padStart(2,'0')}`}
-// Format a minute-duration to "Xh Ym"
-function fmtDur(m){const h=Math.floor(Math.abs(m)/60),mm=Math.abs(m)%60;return h>0?`${h}h${mm>0?mm+'m':''}`:`${mm}m`}
-function nowMin(){const n=new Date();return n.getHours()*60+n.getMinutes()}
-
-// ── FASTING LOGIC ─────────────────────────────────────────
-/*
-  Core rule:
-  - Fast target = 16h from yesterday's last meal
-  - Eating window = 8h from today's first meal (configurable)
-  
-  fastState() returns:
-  {
-    phase: 'fasting' | 'eating' | 'done',
-    fastStart: min (yesterday last meal, minutes since midnight of YESTERDAY = could be >1440 shifted to today's axis)
-    fastTargetMin: minutes since midnight today when fast ends / earliest eat time
-    fastElapsedMin: how many minutes of fast have passed (relative to NOW)
-    fastTotalMin: 16*60
-    fastPct: 0-100
-    firstMeal: 'HH:MM' or null
-    windowEnd: 'HH:MM' or null
-    windowElapsedMin: ...
-    windowTotalMin: ...
-    windowPct: 0-100
-    note: string
-  }
-*/
+// ── FAST STATE ────────────────────────────────────────────
 function fastState(){
   const fasting=DB.get('fasting')||{};
   const tf=fasting[todayKey]||{};
   const yd=new Date();yd.setDate(yd.getDate()-1);
   const yf=fasting[yd.toDateString()]||{};
-
-  const fastHours=16;
-  const winHours=tf.windowHours||8;
-  const nm=nowMin();
-
-  // Yesterday last meal in minutes-since-midnight-today (may be negative if before midnight)
+  const fastHours=16,winHours=tf.windowHours||8,nm=nowMin();
   let fastStartMin=null;
-  if(yf.lastMeal){
-    // lastMeal is HH:MM on yesterday, so offset = timeToMin(yf.lastMeal) - 1440
-    fastStartMin=timeToMin(yf.lastMeal)-1440;
-  }
-
+  if(yf.lastMeal)fastStartMin=t2m(yf.lastMeal)-1440;
   const firstMeal=tf.firstMeal||null;
   const fastTargetMin=fastStartMin!==null?fastStartMin+fastHours*60:null;
-
   if(firstMeal){
-    // We've eaten — show eating window progress
-    const firstMin=timeToMin(firstMeal);
-    const winEndMin=firstMin+winHours*60;
-    const elapsed=nm-firstMin;
+    const fm=t2m(firstMeal),wEnd=fm+winHours*60,elapsed=nm-fm;
     const pct=Math.min(100,Math.max(0,elapsed/(winHours*60)*100));
-    const remaining=winEndMin-nm;
-    let note='';
-    if(elapsed<0)note=`${fmtDur(-elapsed)} 后开始进食窗口`;
-    else if(remaining>0)note=`进食窗口还剩 ${fmtDur(remaining)}`;
-    else note='进食窗口已结束 🌙 尽量不再进食';
-    return{phase:'eating',firstMeal,windowEndStr:minToStr(winEndMin),windowElapsedMin:Math.max(0,elapsed),windowTotalMin:winHours*60,windowPct:pct,note,fastStartMin,fastTargetMin};
+    const rem=wEnd-nm;
+    const note=elapsed<0?`${fmtDur(-elapsed)} 后开始进食窗口`:rem>0?`进食窗口还剩 ${fmtDur(rem)}`:'进食窗口已结束 🌙 尽量不再进食';
+    return{phase:'eating',firstMeal,windowEndStr:m2s(wEnd),windowElapsedMin:Math.max(0,elapsed),windowTotalMin:winHours*60,windowPct:pct,note,fastTargetMin};
   }
-
-  // Not eaten yet — show fasting progress
-  if(fastStartMin===null){
-    return{phase:'no_data',note:'记录昨晚最后进食时间和今天第一餐，获得个性化进食建议'};
-  }
-
-  const fastElapsed=nm-fastStartMin; // elapsed since fast start (in today's minutes)
-  const pct=Math.min(100,Math.max(0,fastElapsed/(fastHours*60)*100));
-  const remaining=fastTargetMin-nm;
-  let note='';
-  if(remaining>0)note=`再坚持 ${fmtDur(remaining)} 可开吃（最早 ${minToStr(fastTargetMin)}）`;
-  else note=`已完成 ${fastHours}h 空腹 ✨ 现在可以开吃了！`;
-  return{phase:'fasting',fastElapsedMin:Math.max(0,fastElapsed),fastTotalMin:fastHours*60,fastPct:pct,fastTargetStr:minToStr(fastTargetMin),note};
+  if(fastStartMin===null)return{phase:'no_data',note:'记录昨晚最后进食时间，获得个性化进食建议'};
+  const fastElapsed=nm-fastStartMin,pct=Math.min(100,Math.max(0,fastElapsed/(fastHours*60)*100));
+  const rem=fastTargetMin-nm;
+  const note=rem>0?`再坚持 ${fmtDur(rem)}，最早 ${m2s(fastTargetMin)} 开吃`:`已完成 ${fastHours}h 空腹 ✨ 现在可以开吃了！`;
+  return{phase:'fasting',fastElapsedMin:Math.max(0,fastElapsed),fastTotalMin:fastHours*60,fastPct:pct,fastTargetStr:m2s(fastTargetMin),note};
 }
+
+// ── ENERGY EVENTS ─────────────────────────────────────────
+function logEnergyEvent(mode,auto=false,isoDate=null){
+  const item={mode,auto};if(isoDate)item._isoDate=isoDate;
+  DB.push('energyEvents',item);
+}
+
+// ── MORNING CHECK ─────────────────────────────────────────
+function checkMorning(){
+  const now=new Date();if(now.getHours()<8)return;
+  if(DB.get('morningDismissed')===todayKey)return;
+  const fasting=DB.get('fasting')||{};
+  const yd=new Date();yd.setDate(yd.getDate()-1);const yKey=yd.toDateString();
+  const yf=fasting[yKey];
+  if(!yf||!yf.firstMeal||!yf.lastMeal||yf._morningShown)return;
+  yf._morningShown=true;fasting[yKey]=yf;DB.set('fasting',fasting);
+  const actual=t2m(yf.lastMeal)-t2m(yf.firstMeal);
+  const win=yf.windowHours||8;const within=actual<=win*60;
+  const fs=fastState();
+  let title='',body='';
+  if(within){title='✨ 昨天做到了！';body=`昨天进食窗口 ${fmtDur(actual)}，控制得很好。`;}
+  else{
+    title='昨天进食窗口超了';
+    body=`昨天进食窗口约 ${fmtDur(actual)}，超过了设定的 ${win}h。\n已记录为低能量时段。`;
+    if(yf.lastMeal){
+      const lmd=new Date(yd);const[lh,lm]=yf.lastMeal.split(':').map(Number);lmd.setHours(lh,lm,0,0);
+      logEnergyEvent('low',true,lmd.toISOString());
+    }
+  }
+  if(fs.fastTargetStr&&!fasting[todayKey]?.firstMeal)body+=`\n今天最早 ${fs.fastTargetStr} 可以开始第一餐。`;
+  document.getElementById('morningTitle').textContent=title;
+  document.getElementById('morningBody').textContent=body;
+  document.getElementById('morningBanner').classList.add('show');
+}
+function dismissMorning(){DB.set('morningDismissed',todayKey);document.getElementById('morningBanner').classList.remove('show')}
 
 // ── INIT ──────────────────────────────────────────────────
 function init(){
   const now=new Date();
   document.getElementById('todayDate').textContent=`${now.getMonth()+1}月${now.getDate()}日 ${'日一二三四五六'[now.getDay()]}`;
-  renderMode();renderChecklist();renderTodaySummary();applySummaryState();checkYesterdayLastMeal();
+  renderMode();renderChecklist();renderTodaySummary();applySummaryState();
+  setTimeout(checkMorning,800);
+  checkYesterdayLastMeal();
+}
+
+// ── REFRESH ───────────────────────────────────────────────
+function doRefresh(){
+  const btn=document.getElementById('refreshBtn');
+  if(btn)btn.classList.add('spinning');
+  // re-render all data
+  const now=new Date();
+  document.getElementById('todayDate').textContent=`${now.getMonth()+1}月${now.getDate()}日 ${'日一二三四五六'[now.getDay()]}`;
+  // reset today key if date changed
+  const newTodayKey=new Date().toDateString();
+  if(newTodayKey!==todayKey){
+    location.reload();return;
+  }
+  renderMode();renderChecklist();renderTodaySummary();applySummaryState();checkMorning();
+  if(document.getElementById('page-data').classList.contains('active'))renderDataPage();
+  setTimeout(()=>{if(btn)btn.classList.remove('spinning');showToast('✅ 已刷新');},400);
 }
 
 // ── MODE ──────────────────────────────────────────────────
 function renderMode(){
   const p=currentMode==='peak';
-  document.getElementById('modeBanner').className='mode-banner '+(p?'mode-peak-banner':'mode-low-banner');
-  document.getElementById('modeLabel').textContent=p?'⚡ 高峰模式':'🌙 低谷模式';
+  document.getElementById('modeBanner').className='mode-card '+(p?'mode-card-peak':'mode-card-low');
+  document.getElementById('modeEmoji').textContent=p?'⚡':'🌙';
+  document.getElementById('modeTagTxt').textContent=p?'高峰模式':'低谷模式';
   document.getElementById('modeTitle').textContent=p?'今天我有能量':'今天需要休养';
-  document.getElementById('modeSub').textContent=p?'推进期：按高峰清单认真执行':'守住期：只做最低限度就好';
+  document.getElementById('modeSub').textContent=p?'推进期 · 按高峰清单认真执行':'守住期 · 只做最低限度就好';
 }
 function openModeSwitch(){
+  const cur=currentMode;
   showModal(`<div class="modal-title">我现在的状态是？</div>
     <div style="display:flex;flex-direction:column;gap:12px;margin-top:8px">
-      <div onclick="setMode('peak')" style="padding:18px;border-radius:var(--radius);border:2px solid ${currentMode==='peak'?'var(--peak)':'var(--border)'};background:var(--peak-bg);cursor:pointer">
-        <div style="font-size:16px;font-weight:500;color:var(--peak);margin-bottom:6px">⚡ 高峰模式 — 我有能量</div>
-        <div style="font-size:13px;color:var(--text2)">感觉有意思、想动、脑子转得快</div>
+      <div onclick="previewMode('peak')" style="padding:20px;border-radius:16px;background:linear-gradient(135deg,#5a8a7d,#3a6a60);cursor:pointer;box-shadow:0 4px 16px rgba(74,124,111,.3)">
+        <div style="font-size:18px;font-weight:600;color:white;margin-bottom:6px">⚡ 高峰模式</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.8)">感觉有意思、想动、脑子转得快</div>
       </div>
-      <div onclick="setMode('low')" style="padding:18px;border-radius:var(--radius);border:2px solid ${currentMode==='low'?'var(--low)':'var(--border)'};background:var(--low-bg);cursor:pointer">
-        <div style="font-size:16px;font-weight:500;color:var(--low);margin-bottom:6px">🌙 低谷模式 — 需要休养</div>
-        <div style="font-size:13px;color:var(--text2)">什么都不想做、启动困难、情绪低</div>
+      <div onclick="previewMode('low')" style="padding:20px;border-radius:16px;background:linear-gradient(135deg,#9b7f6e,#6e4e40);cursor:pointer;box-shadow:0 4px 16px rgba(139,111,94,.3)">
+        <div style="font-size:18px;font-weight:600;color:white;margin-bottom:6px">🌙 低谷模式</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.8)">什么都不想做、启动困难、情绪低</div>
       </div>
     </div>
-    <div style="margin-top:16px;padding:12px;background:var(--warn-bg);border-radius:var(--radius-sm);font-size:13px;color:#8b6233">低谷期不用高峰期标准要求自己。</div>
-    <button class="btn-ghost" style="margin-top:12px" onclick="closeModal()">取消</button>`);
+    <div style="margin-top:14px;padding:12px;background:var(--warn-bg);border-radius:var(--radius-sm);font-size:13px;color:#8b6233">低谷期不用高峰期标准要求自己。</div>
+    <button class="btn-ghost" style="margin-top:10px" onclick="closeModal()">取消</button>`);
+}
+function previewMode(m){
+  // 如果是从 peek 状态点的，先静默归位
+  if(_peekOrigMode!==null && m===_peekOrigMode){exitPeek();closeModal();return;}
+  if(_peekOrigMode!==null) exitPeek();
+  // 如果已经是这个模式，直接关闭
+  if(m===currentMode){closeModal();return;}
+  const label=m==='peak'?'⚡ 高峰模式':'🌙 低谷模式';
+  const desc=m==='peak'?'切换后清单换为高峰版，并记录一次能量事件。':'切换后清单换为低谷版，并记录一次能量事件。';
+  showModal(`<div class="modal-title">${label}</div>
+    <p style="font-size:13px;color:var(--text2);margin-bottom:16px;line-height:1.7">${desc}</p>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <button class="btn-primary" onclick="setMode('${m}')">切换状态 · 记录到图表</button>
+      <button class="btn-ghost" onclick="peekMode('${m}')">先看看要求，不切换</button>
+      <button class="btn-ghost" onclick="openModeSwitch()">← 返回</button>
+    </div>`);
+}
+let _peekOrigMode=null;
+function peekMode(m){
+  // 仅切换界面显示，不记录能量事件，不改 DB
+  if(_peekOrigMode===null) _peekOrigMode=currentMode; // 记住原始状态
+  currentMode=m;
+  closeModal();renderMode();renderChecklist();
+  showToast('👁 预览'+( m==='peak'?'高峰':'低谷')+'要求，未记录');
+}
+function exitPeek(){
+  // 从 peek 切回原状态，完全静默，不提示不记录
+  if(_peekOrigMode!==null){
+    currentMode=_peekOrigMode;
+    _peekOrigMode=null;
+    renderMode();renderChecklist();
+    // 静默切回，不showToast，不调用setMode
+  }
 }
 function setMode(m){
   currentMode=m;DB.set('mode',m);
-  const el=DB.get('energyLog')||[];const i=el.findIndex(e=>e.dateKey===todayKey);
-  if(i>=0){el[i].mode=m;DB.set('energyLog',el)}else DB.push('energyLog',{dateKey:todayKey,mode:m});
-  closeModal();renderMode();renderChecklist();showToast(m==='peak'?'⚡ 高峰模式':'🌙 低谷模式');
+  // 记录带时间戳的能量事件
+  logEnergyEvent(m,false);
+  closeModal();renderMode();renderChecklist();showToast(m==='peak'?'⚡ 已切换：高峰模式':'🌙 已切换：低谷模式');
 }
 
 // ── CHECKLIST ─────────────────────────────────────────────
+let proteinSubExpanded = DB.get('proteinSubExpanded') !== false;
+
+function getTodayMeals(){
+  const meals = DB.get('meals')||[];
+  return meals.filter(m=>new Date(m.date).toDateString()===todayKey);
+}
+
+function getProteinSubs(){
+  const meals = getTodayMeals();
+  const proteinChecks = DB.get('proteinChecks')||{};
+  const todayChecks = proteinChecks[todayKey]||{};
+  const slotLabel = {'first':'第一餐','second':'第二餐','third':'第三餐','snack':'加餐'};
+  return meals.map(m=>{
+    const label = slotLabel[m.slot]||m.slot;
+    const food = m.note ? `（${m.note}）` : '';
+    const isSnack = m.slot==='snack';
+    return { id: m.id, label: `${label}先吃蛋白质${food}`, done: !!todayChecks[m.id], isSnack };
+  });
+}
+
+function toggleProteinSub(mealId){
+  const proteinChecks = DB.get('proteinChecks')||{};
+  if(!proteinChecks[todayKey]) proteinChecks[todayKey]={};
+  proteinChecks[todayKey][mealId] = !proteinChecks[todayKey][mealId];
+  DB.set('proteinChecks', proteinChecks);
+  renderChecklist(); renderTodaySummary();
+}
+
+function toggleProteinExpand(){
+  proteinSubExpanded = !proteinSubExpanded;
+  DB.set('proteinSubExpanded', proteinSubExpanded);
+  renderChecklist();
+}
+
 function renderChecklist(){
+  const subs = getProteinSubs();
+  const subDone = subs.filter(s=>s.done).length;          // 分子：所有勾选（含加餐）
+  const subTotal = subs.filter(s=>!s.isSnack).length;     // 分母：只算正餐
+
   document.getElementById('checklistContainer').innerHTML=LISTS[currentMode].map(item=>{
     const done=checkedItems[item.id];
+    // 蛋白质任务：显示子任务计数 + 展开/隐藏
+    if(item.id==='protein' && currentMode==='peak'){
+      const badge = subTotal>0 ? `<span style="font-size:11px;color:${subDone===subTotal&&subTotal>0?'var(--peak)':'var(--text3)'};margin-left:6px;font-weight:600">${subDone}/${subTotal}</span>` : '';
+      const arrow = subTotal>0 ? `<span style="font-size:11px;color:var(--text3);margin-left:4px;transition:transform .2s;display:inline-block;transform:${proteinSubExpanded?'rotate(0deg)':'rotate(-90deg)'}">▾</span>` : '';
+      const subHtml = (subTotal>0 && proteinSubExpanded) ? subs.map(s=>`
+        <div class="check-item ${s.done?'done':''}" style="padding:7px 0 7px 34px;border-bottom:none" onclick="toggleProteinSub('${s.id}')">
+          <div class="check-box" style="width:18px;height:18px;border-radius:4px;flex-shrink:0;margin-top:0"><svg viewBox="0 0 12 12" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,6 5,9 10,3"/></svg></div>
+          <div><div class="check-label" style="font-size:13px">${s.label}</div></div>
+        </div>`).join('') : '';
+      const proteinDoneMain = subTotal>0 ? subs.filter(s=>!s.isSnack&&s.done).length===subTotal&&subTotal>0 : !!checkedItems['protein'];
+      return`<div>
+        <div class="check-item" style="${proteinDoneMain?'opacity:.4':''}">
+          <div class="check-box" style="${proteinDoneMain?'background:var(--peak);border-color:var(--peak)':''}" onclick="toggleCheck('protein',this.closest('.check-item'))"><svg viewBox="0 0 12 12" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,6 5,9 10,3"/></svg></div>
+          <div style="flex:1;cursor:pointer" onclick="toggleProteinExpand()"><div class="check-label">${item.label}${badge}${arrow}</div><div class="check-note">${item.note}</div></div>
+        </div>
+        ${subHtml}
+      </div>`;
+    }
     return`<div class="check-item ${done?'done':''}" onclick="toggleCheck('${item.id}',this)">
       <div class="check-box"><svg viewBox="0 0 12 12" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,6 5,9 10,3"/></svg></div>
       <div><div class="check-label">${item.label}</div><div class="check-note">${item.note}</div></div>
@@ -440,107 +721,103 @@ function renderChecklist(){
   }).join('');
 }
 function toggleCheck(id,el){
-  checkedItems[id]=!checkedItems[id];DB.set('checkedToday',checkedItems);el.classList.toggle('done');updateEnergyLog();renderTodaySummary();
-}
-function updateEnergyLog(){
-  const items=LISTS[currentMode];const score=Math.round(items.filter(i=>checkedItems[i.id]).length/items.length*100);
-  const el=DB.get('energyLog')||[];const i=el.findIndex(e=>e.dateKey===todayKey);
-  if(i>=0){el[i].score=score;el[i].mode=currentMode;DB.set('energyLog',el)}else DB.push('energyLog',{dateKey:todayKey,score,mode:currentMode});
+  checkedItems[id]=!checkedItems[id];DB.set('checkedToday',checkedItems);
+  el.classList.toggle('done');renderTodaySummary();
 }
 
 // ── YESTERDAY CHECK ───────────────────────────────────────
 function checkYesterdayLastMeal(){
-  const fasting=DB.get('fasting')||{};const yd=new Date();yd.setDate(yd.getDate()-1);const yKey=yd.toDateString();
-  const yf=fasting[yKey];if(!yf||!yf.lastMeal||!yf.firstMeal||yf._reviewed)return;
-  const actual=timeToMin(yf.lastMeal)-timeToMin(yf.firstMeal);
-  const win=yf.windowHours||8;
-  yf._reviewed=true;fasting[yKey]=yf;DB.set('fasting',fasting);
-  const within=actual<=win*60;
-  if(!within){const el=DB.get('energyLog')||[];const i=el.findIndex(e=>e.dateKey===yKey);if(i>=0){el[i].lowEnergy=true;DB.set('energyLog',el)}}
-  if(within)setTimeout(()=>showToast(`✨ 昨天进食窗口 ${fmtDur(actual)}，做到了！`),1500);
-  else setTimeout(()=>showToast(`昨天进食窗口 ${fmtDur(actual)}，已标记低能量日`),1500);
-  // Suggest earliest first meal today
-  const fs=fastState();
-  if(fs.phase==='fasting'&&fs.fastTargetStr){
-    setTimeout(()=>showToast(`今天最早 ${fs.fastTargetStr} 开始吃第一餐`),4000);
+  const fasting=DB.get('fasting')||{};
+  const yd=new Date();yd.setDate(yd.getDate()-1);const yKey=yd.toDateString();
+  const yf=fasting[yKey];
+  if(!yf||!yf.lastMeal||!yf.firstMeal||yf._checked)return;
+  yf._checked=true;fasting[yKey]=yf;DB.set('fasting',fasting);
+  const actual=t2m(yf.lastMeal)-t2m(yf.firstMeal);const win=yf.windowHours||8;
+  if(actual>win*60){
+    const lmd=new Date(yd);const[lh,lm]=yf.lastMeal.split(':').map(Number);lmd.setHours(lh,lm,0,0);
+    logEnergyEvent('low',true,lmd.toISOString());
   }
 }
 
 // ── TODAY SUMMARY ─────────────────────────────────────────
-function pbarHTML(label,pct,note,color,valueStr){
+function pbar(label,pct,note,color,val){
   return`<div class="pbar-row">
-    <div class="pbar-header"><span class="pbar-label">${label}</span><span class="pbar-value">${valueStr}</span></div>
+    <div class="pbar-header"><span class="pbar-label">${label}</span><span class="pbar-value">${val}</span></div>
     <div class="pbar-track"><div class="pbar-fill" style="width:${pct}%;background:${color}"></div></div>
-    <div class="pbar-note">${note}</div>
+    ${note?`<div class="pbar-note">${note}</div>`:''}
   </div>`;
 }
-
 function renderTodaySummary(){
-  const items=LISTS[currentMode];const done=items.filter(i=>checkedItems[i.id]).length;const total=items.length;const pct=Math.round(done/total*100);
-  // Always-visible progress
-  document.getElementById('todayProgress').innerHTML=`
-    <div style="margin-bottom:${summaryVisible?'12px':'0'}">
-      <div class="pbar-row" style="margin-bottom:0">
-        <div class="pbar-header"><span class="pbar-label">任务完成</span><span class="pbar-value">${done}/${total}</span></div>
-        <div class="pbar-track"><div class="pbar-fill" style="width:${pct}%;background:${currentMode==='peak'?'var(--peak)':'var(--low)'}"></div></div>
-      </div>
-    </div>`;
-
+  const items=LISTS[currentMode];
+  // 蛋白质任务：子任务全勾则算完成
+  const subs=getProteinSubs();
+  const proteinDone=subs.length>0?subs.every(s=>s.done):!!checkedItems['protein'];
+  const done=items.filter(i=>i.id==='protein'?(currentMode==='peak'?proteinDone:!!checkedItems[i.id]):!!checkedItems[i.id]).length;
+  const total=items.length,pct=Math.round(done/total*100);
+  const col=currentMode==='peak'?'var(--peak)':'var(--low)';
+  document.getElementById('todayProgress').innerHTML=`<div class="pbar-row" style="margin-bottom:${summaryVisible?'10px':'0'}">
+    <div class="pbar-header"><span class="pbar-label">任务完成</span><span class="pbar-value">${done}/${total}</span></div>
+    <div class="pbar-track"><div class="pbar-fill" style="width:${pct}%;background:${col}"></div></div>
+  </div>`;
   if(!summaryVisible){document.getElementById('todayDetails').style.display='none';return}
   document.getElementById('todayDetails').style.display='';
-
-  // Fasting / eating window bars
   const fs=fastState();
-  let fastBars='';
+  let fbars='';
   if(fs.phase==='fasting'){
-    const elapsed=fs.fastElapsedMin,total2=fs.fastTotalMin;
-    const elH=Math.floor(elapsed/60),elM=elapsed%60;
-    fastBars=pbarHTML(
-      '⏳ 空腹进度',
-      fs.fastPct,
-      fs.note,
-      fs.fastPct>=100?'var(--peak)':'var(--warn)',
-      `${elH}h${elM>0?elM+'m':''} / 16h`
-    );
+    const el=fs.fastElapsedMin,elH=Math.floor(el/60),elM=el%60;
+    fbars=pbar('⏳ 空腹进度',fs.fastPct,fs.note,fs.fastPct>=100?'var(--peak)':'var(--warn)',`${elH}h${elM>0?elM+'m':''} / 16h`);
   } else if(fs.phase==='eating'){
-    const elapsed=fs.windowElapsedMin,total2=fs.windowTotalMin;
-    const pct2=fs.windowPct;
-    const color=pct2>=100?'var(--danger)':pct2>=85?'var(--warn)':'var(--peak)';
-    fastBars=pbarHTML(
-      '🍽️ 进食窗口',
-      pct2,
-      fs.note,
-      color,
-      `${fs.firstMeal} — ${fs.windowEndStr}`
-    );
-  } else if(fs.phase==='no_data'){
-    fastBars=`<div class="pbar-row"><div class="pbar-note" style="color:var(--text3)">${fs.note}</div></div>`;
-  }
+    const c=fs.windowPct>=100?'var(--danger)':fs.windowPct>=85?'var(--warn)':'var(--peak)';
+    fbars=pbar('🍽️ 进食窗口',fs.windowPct,fs.note,c,`${fs.firstMeal}—${fs.windowEndStr}`);
+  } else fbars=`<div class="pbar-note" style="margin-bottom:10px">${fs.note}</div>`;
 
-  // Logs
   const logs=DB.get('logs')||[];
   const todayLogs=logs.filter(l=>new Date(l.date).toDateString()===todayKey);
   const weights=DB.get('weights')||[];
   const todayW=weights.find(w=>new Date(w.date).toDateString()===todayKey);
-  let logLines='';
-  if(todayW)logLines+=`<div style="display:flex;gap:6px;padding:5px 0;font-size:13px;color:var(--text2)"><span>⚖️</span><span>今日体重 <strong style="color:var(--text)">${todayW.value} kg</strong></span></div>`;
-  todayLogs.slice(-3).forEach(l=>{logLines+=`<div style="display:flex;gap:6px;padding:5px 0;font-size:13px;color:var(--text2)"><span>${l.icon||'📝'}</span><span>${l.summary}</span></div>`;});
-  if(done===total&&total>0)logLines+=`<div style="margin-top:8px;padding:10px 12px;background:var(--peak-bg);border-radius:var(--radius-sm);font-size:13px;color:var(--peak)">✨ 今天全部完成了！</div>`;
-
-  document.getElementById('todayDetails').innerHTML=`
-    <div style="border-top:1px solid var(--border2);padding-top:10px;margin-top:2px">
-      ${fastBars}
-      ${logLines||'<div style="font-size:13px;color:var(--text3);padding:4px 0">今天还没有其他记录</div>'}
-    </div>`;
+  let lines='';
+  if(todayW)lines+=`<div style="display:flex;gap:6px;padding:5px 0;font-size:13px;color:var(--text2)"><span>⚖️</span><span>今日体重 <strong>${todayW.value} kg</strong></span></div>`;
+  todayLogs.slice(-4).forEach(l=>{lines+=`<div style="display:flex;gap:6px;padding:5px 0;font-size:13px;color:var(--text2)"><span>${l.icon||'📝'}</span><span>${l.summary}</span></div>`;});
+  if(done===total&&total>0)lines+=`<div style="margin-top:8px;padding:10px;background:var(--peak-bg);border-radius:var(--radius-sm);font-size:13px;color:var(--peak)">✨ 今天全部完成了！</div>`;
+  document.getElementById('todayDetails').innerHTML=`<div style="border-top:1px solid var(--border2);padding-top:10px">${fbars}${lines||'<div style="font-size:13px;color:var(--text3);padding:4px 0">今天还没有其他记录</div>'}</div>`;
 }
-
 function toggleSummary(){
   summaryVisible=!summaryVisible;DB.set('summaryVisible',summaryVisible);
   document.getElementById('summaryToggleIcon').style.transform=summaryVisible?'':'rotate(-90deg)';
   renderTodaySummary();
 }
-function applySummaryState(){
-  if(!summaryVisible)document.getElementById('summaryToggleIcon').style.transform='rotate(-90deg)';
+function applySummaryState(){if(!summaryVisible)document.getElementById('summaryToggleIcon').style.transform='rotate(-90deg)'}
+
+// ── DATE INPUT ROWS ────────────────────────────────────────
+function dateTimeRows(defDate,defTime){
+  defDate=defDate||todayDateStr();defTime=defTime||nowTimeStr();
+  return`<div class="modal-label">日期</div>
+    <div class="date-row">
+      <select class="modal-select" id="iDatePreset" onchange="applyDatePreset()">
+        <option value="0">今天</option>
+        <option value="1">昨天</option>
+        <option value="2">前天</option>
+        <option value="3">大前天</option>
+        <option value="custom">自定义</option>
+      </select>
+      <input class="modal-input" id="iDateCustom" type="date" value="${defDate}" style="display:none">
+    </div>
+    <div class="modal-label">时间</div>
+    <input class="modal-input" id="iTime" type="time" value="${defTime}">`;
+}
+function applyDatePreset(){
+  const sel=document.getElementById('iDatePreset').value;
+  const custom=document.getElementById('iDateCustom');
+  if(sel==='custom'){custom.style.display='';custom.focus();}
+  else{custom.style.display='none';custom.value=dateStrOffset(parseInt(sel));}
+}
+function getInputDateTime(){
+  const preset=document.getElementById('iDatePreset')?.value;
+  let dateStr;
+  if(preset==='custom')dateStr=document.getElementById('iDateCustom').value;
+  else dateStr=dateStrOffset(parseInt(preset||'0'));
+  const timeStr=document.getElementById('iTime')?.value||nowTimeStr();
+  return{dateStr,timeStr};
 }
 
 // ── MODAL ─────────────────────────────────────────────────
@@ -548,52 +825,91 @@ function showModal(html){document.getElementById('modalContent').innerHTML=html;
 function closeModal(){document.getElementById('modalOverlay').classList.remove('open')}
 function closeModalOverlay(e){if(e.target===document.getElementById('modalOverlay'))closeModal()}
 
+let selectedSlot=null;
+function selectSlot(val,el){
+  selectedSlot=val;
+  document.querySelectorAll('.meal-slot:not(.used)').forEach(b=>b.classList.remove('selected'));
+  if(el&&!el.classList.contains('used'))el.classList.add('selected');
+}
+
 function openModal(type){
   const fasting=DB.get('fasting')||{};
+
   if(type==='weight'){showModal(`<div class="modal-title">记录体重 ⚖️</div>
-    <div class="modal-label">体重（kg）</div><input class="modal-input" id="iW" type="number" step="0.1" placeholder="例：58.5" inputmode="decimal">
+    <div class="modal-label">体重（kg）</div><input class="modal-input" id="iW" type="number" step="0.1" placeholder="例：58.5" inputmode="decimal" autofocus>
     <div class="modal-label">体脂率（可选 %）</div><input class="modal-input" id="iF" type="number" step="0.1" placeholder="例：28.5" inputmode="decimal">
+    ${dateTimeRows()}
     <div class="modal-label">备注（可选）</div><input class="modal-input" id="iN" placeholder="早上空腹 / 晚上等">
     <button class="btn-primary" onclick="saveWeight()">保存</button><button class="btn-ghost" onclick="closeModal()">取消</button>`);}
+
   else if(type==='exercise'){showModal(`<div class="modal-title">运动记录 🏃</div>
     <div class="modal-label">运动种类</div>
     <select class="modal-select" id="iET"><option>走路/散步</option><option>跑步</option><option>骑行</option><option>游泳</option><option>瑜伽/拉伸</option><option>力量训练</option><option>跳绳/跳操</option><option>椭圆仪</option><option>攀岩（岩馆）</option><option>攀岩（月亮板）</option><option>爬楼梯</option><option>其他</option></select>
     <div class="modal-label">时长（分钟）</div><input class="modal-input" id="iED" type="number" placeholder="例：30" inputmode="numeric">
     <div class="modal-label">消耗（kcal，可选）</div><input class="modal-input" id="iEC" type="number" inputmode="numeric">
+    ${dateTimeRows()}
     <div class="modal-label">感受</div>
     <div class="emoji-row" id="exMR"><button class="emoji-btn" onclick="selE(this,'exMR')">😊 很好</button><button class="emoji-btn" onclick="selE(this,'exMR')">😐 一般</button><button class="emoji-btn" onclick="selE(this,'exMR')">😓 累但值</button><button class="emoji-btn" onclick="selE(this,'exMR')">😩 很难熬</button></div>
     <button class="btn-primary" onclick="saveExercise()">保存</button><button class="btn-ghost" onclick="closeModal()">取消</button>`);}
+
   else if(type==='measure'){showModal(`<div class="modal-title">围度记录 📏</div>
     <div class="modal-label">腰围（cm）</div><input class="modal-input" id="iMW" type="number" step="0.5" inputmode="decimal">
     <div class="modal-label">臀围（cm）</div><input class="modal-input" id="iMH" type="number" step="0.5" inputmode="decimal">
     <div class="modal-label">大腿围（cm）</div><input class="modal-input" id="iMT" type="number" step="0.5" inputmode="decimal">
     <div class="modal-label">手臂围（cm）</div><input class="modal-input" id="iMA" type="number" step="0.5" inputmode="decimal">
+    ${dateTimeRows()}
     <button class="btn-primary" onclick="saveMeasure()">保存</button><button class="btn-ghost" onclick="closeModal()">取消</button>`);}
+
+  else if(type==='meal'){
+    const tf=fasting[todayKey]||{};
+    const hasFirstIntake=!!tf.firstMeal;
+    const winNote=hasFirstIntake?`<div style="background:var(--peak-bg);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--peak);margin-bottom:4px">📍 进食窗口已开始 ${tf.firstMeal}${tf.windowHours?' · '+tf.windowHours+'h':''}</div>`:'<div style="font-size:12px;color:var(--text3);margin-bottom:4px">💡 第一条记录将自动打开今天的进食窗口</div>';
+    showModal(`<div class="modal-title">记录进食 🍽️</div>
+      ${winNote}
+      <div class="modal-label">这次是？</div>
+      <div class="meal-slots">
+        <button class="meal-slot" id="slot_first" onclick="selectSlot('first',this)">第一餐</button>
+        <button class="meal-slot" id="slot_second" onclick="selectSlot('second',this)">第二餐</button>
+        <button class="meal-slot" id="slot_third" onclick="selectSlot('third',this)">第三餐</button>
+        <button class="meal-slot" id="slot_snack" onclick="selectSlot('snack',this)">加餐 / 零食</button>
+      </div>
+      ${dateTimeRows()}
+      <div class="modal-label">吃了什么（可选）</div>
+      <textarea class="modal-textarea" id="iMealNote" placeholder="蓝莓 / 鸡胸米饭 / 外卖沙拉..."></textarea>
+      <button class="btn-primary" onclick="saveMeal()">保存</button><button class="btn-ghost" onclick="closeModal()">取消</button>`);}
+
   else if(type==='binge'){showModal(`<div class="modal-title">饮食状态 🌊</div>
     <div class="modal-label">今天饮食怎么样？</div>
     <div class="emoji-row" id="bSR"><button class="emoji-btn" onclick="selE(this,'bSR')">✅ 很好</button><button class="emoji-btn" onclick="selE(this,'bSR')">🟡 一般</button><button class="emoji-btn" onclick="selE(this,'bSR')">🌊 有些暴食</button><button class="emoji-btn" onclick="selE(this,'bSR')">💥 严重暴食</button></div>
     <div style="background:var(--warn-bg);border-radius:var(--radius-sm);padding:12px;font-size:13px;color:#8b6233;line-height:1.7;margin-top:12px">暴食不是道德失败。<br>你的大脑在找多巴胺，只是神经系统的正常反应。<br><strong>下一步：不惩罚，不节食补偿，明天正常开始。</strong></div>
+    ${dateTimeRows()}
     <div class="modal-label">备注</div><textarea class="modal-textarea" id="iBN" placeholder="今天发生了什么..."></textarea>
     <button class="btn-primary" onclick="saveBinge()">记录，然后放下它</button><button class="btn-ghost" onclick="closeModal()">取消</button>`);}
+
   else if(type==='fasting'){
     const tf=fasting[todayKey]||{};
     const fs=fastState();
     let hint='';
-    if(fs.phase==='fasting'&&fs.fastTargetStr)hint=`<div style="background:var(--peak-bg);border-radius:var(--radius-sm);padding:10px 12px;font-size:13px;color:var(--peak);margin-top:8px;line-height:1.6">根据昨晚最后进食时间，今天最早 <strong>${fs.fastTargetStr}</strong> 可以开吃。</div>`;
-    else if(fs.phase==='no_data')hint=`<div style="font-size:12px;color:var(--text3);margin-top:8px;line-height:1.6">先记录昨晚最后进食时间，可以获得个性化建议。</div>`;
-    showModal(`<div class="modal-title">今天第一次进食 🍽️</div>
+    if(fs.phase==='fasting'&&fs.fastTargetStr)hint=`<div style="background:var(--peak-bg);border-radius:var(--radius-sm);padding:10px 12px;font-size:13px;color:var(--peak);margin-top:8px">根据昨晚最后进食，今天最早 <strong>${fs.fastTargetStr}</strong> 可以开吃。</div>`;
+    const curSlot=tf.firstMealSlot||'meal';
+    showModal(`<div class="modal-title">今天第一次进食 🕐</div>
       <div class="modal-label">第一次进食时间</div><input class="modal-input" id="iFF" type="time" value="${tf.firstMeal||'12:00'}">
       ${hint}
+      <div class="modal-label">这次进食是？</div>
+      <div class="meal-slots">
+        <button class="meal-slot ${curSlot!=='snack'?'selected':''}" id="fslot_meal" onclick="selFSlot('meal',this)">正餐</button>
+        <button class="meal-slot ${curSlot==='snack'?'selected':''}" id="fslot_snack" onclick="selFSlot('snack',this)">加餐 / 零食</button>
+      </div>
       <div class="modal-label">进食窗口长度</div>
       <select class="modal-select" id="iFW"><option value="6">6 小时</option><option value="7">7 小时</option><option value="8" ${(tf.windowHours||8)===8?'selected':''}>8 小时（推荐）</option><option value="9">9 小时</option><option value="10">10 小时</option></select>
-      <div style="font-size:12px;color:var(--text3);margin-top:8px">不必强求固定时间，按今天实际来就好。</div>
       <button class="btn-primary" onclick="saveFasting()">保存</button><button class="btn-ghost" onclick="closeModal()">取消</button>`);}
+
   else if(type==='lastmeal'){
     const yd=new Date();yd.setDate(yd.getDate()-1);const yKey=yd.toDateString();
     const yf=fasting[yKey]||{};
     showModal(`<div class="modal-title">昨晚最后进食 🌙</div>
       <div class="modal-label">昨天最后一次进食时间</div><input class="modal-input" id="iLM" type="time" value="${yf.lastMeal||'20:00'}">
-      <div style="font-size:12px;color:var(--text3);margin-top:8px;line-height:1.6">记录后会自动计算今天最早可以吃第一餐的时间（16h 后）。</div>
+      <div style="font-size:12px;color:var(--text3);margin-top:8px;line-height:1.6">会自动计算今天最早开吃时间（16h 后）。</div>
       <button class="btn-primary" onclick="saveLastMeal()">保存</button><button class="btn-ghost" onclick="closeModal()">取消</button>`);}
 }
 
@@ -613,122 +929,195 @@ window.startTimer=function(){
   window._ti=setInterval(()=>{
     window._ts--;const m=Math.floor(window._ts/60),s=window._ts%60;
     const el=document.getElementById('tD');
-    if(el)el.textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    if(el)el.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
     if(window._ts<=0){clearInterval(window._ti);if(el)el.textContent='✨';if(btn){btn.textContent='时间到！感觉怎么样？';btn.style.opacity='1';}}
   },1000);
 };
 function selE(btn,g){document.querySelectorAll('#'+g+' .emoji-btn').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected')}
+function selEMode(val,el){document.querySelectorAll('#eem_peak,#eem_low').forEach(b=>b.classList.remove('selected'));if(el)el.classList.add('selected');}
 
 // ── SAVE ──────────────────────────────────────────────────
 function saveWeight(){
   const v=parseFloat(document.getElementById('iW').value);if(!v){showToast('请输入体重数值');return}
   const f=parseFloat(document.getElementById('iF').value)||null;const n=document.getElementById('iN').value;
-  DB.push('weights',{value:v,fat:f,note:n});
-  DB.push('logs',{icon:'⚖️',summary:`体重 ${v} kg${f?'，体脂 '+f+'%':''}${n?' · '+n:''}`});
+  const{dateStr,timeStr}=getInputDateTime();
+  DB.push('weights',{value:v,fat:f,note:n,_date:dateStr,_time:timeStr});
+  DB.push('logs',{icon:'⚖️',summary:`体重 ${v} kg${f?'，体脂 '+f+'%':''}${n?' · '+n:''}`,category:'weight',_date:dateStr,_time:timeStr});
   closeModal();showToast('✅ 体重已记录');renderTodaySummary();
   if(document.getElementById('page-data').classList.contains('active'))renderDataPage();
 }
 function saveExercise(){
-  const t=document.getElementById('iET').value;const d=parseInt(document.getElementById('iED').value)||0;if(!d){showToast('请输入时长');return}
-  const c=parseInt(document.getElementById('iEC').value)||null;const m=document.querySelector('#exMR .selected')?.textContent||'';
-  DB.push('exercises',{type:t,dur:d,cal:c,mood:m});
-  DB.push('logs',{icon:'🏃',summary:`${t} ${d}分钟${c?' · '+c+'kcal':''}${m?' · '+m:''}`});
-  checkedItems['move']=true;DB.set('checkedToday',checkedItems);
-  closeModal();showToast('✅ 运动已记录');renderChecklist();renderTodaySummary();updateEnergyLog();
+  const tp=document.getElementById('iET').value;const d=parseInt(document.getElementById('iED').value)||0;if(!d){showToast('请输入时长');return}
+  const c=parseInt(document.getElementById('iEC').value)||null;const mood=document.querySelector('#exMR .selected')?.textContent||'';
+  const{dateStr,timeStr}=getInputDateTime();
+  DB.push('exercises',{type:tp,dur:d,cal:c,mood,_date:dateStr,_time:timeStr});
+  DB.push('logs',{icon:'🏃',summary:`${tp} ${d}分钟${c?' · '+c+'kcal':''}${mood?' · '+mood:''}`,category:'exercise',_date:dateStr,_time:timeStr});
+  const dk=dateKeyFromStr(dateStr+'T'+timeStr);
+  if(dk===todayKey){checkedItems['move']=true;DB.set('checkedToday',checkedItems);renderChecklist();}
+  closeModal();showToast('✅ 运动已记录');renderTodaySummary();
 }
 function saveMeasure(){
   const w=parseFloat(document.getElementById('iMW').value)||null;const h=parseFloat(document.getElementById('iMH').value)||null;
-  const t=parseFloat(document.getElementById('iMT').value)||null;const a=parseFloat(document.getElementById('iMA').value)||null;
-  if(!w&&!h&&!t&&!a){showToast('请至少填写一项');return}
-  DB.push('measures',{waist:w,hip:h,thigh:t,arm:a});
-  DB.push('logs',{icon:'📏',summary:'围度 · '+[w&&`腰${w}`,h&&`臀${h}`,t&&`腿${t}`,a&&`臂${a}`].filter(Boolean).join(' / ')+' cm'});
+  const tt=parseFloat(document.getElementById('iMT').value)||null;const a=parseFloat(document.getElementById('iMA').value)||null;
+  if(!w&&!h&&!tt&&!a){showToast('请至少填写一项');return}
+  const{dateStr,timeStr}=getInputDateTime();
+  DB.push('measures',{waist:w,hip:h,thigh:tt,arm:a,_date:dateStr,_time:timeStr});
+  DB.push('logs',{icon:'📏',summary:'围度 · '+[w&&`腰${w}`,h&&`臀${h}`,tt&&`腿${tt}`,a&&`臂${a}`].filter(Boolean).join(' / ')+' cm',category:'measure',_date:dateStr,_time:timeStr});
   closeModal();showToast('✅ 围度已记录');renderTodaySummary();
+}
+function saveMeal(){
+  if(!selectedSlot){showToast('请选择类型');return}
+  const{dateStr,timeStr}=getInputDateTime();const note=document.getElementById('iMealNote').value;
+  const slotLabel={'first':'第一餐','second':'第二餐','third':'第三餐','snack':'加餐'}[selectedSlot];
+  const mealId=DB.push('meals',{slot:selectedSlot,note,_date:dateStr,_time:timeStr}).slice(-1)[0]?.id;
+  DB.push('logs',{icon:'🍽️',summary:`${slotLabel}${note?' · '+note:''}`,category:'meal',_date:dateStr,_time:timeStr});
+  // ── 任何一条饮食记录都自动打开当天进食窗口（如果还没记录的话）──
+  const fasting=DB.get('fasting')||{};
+  const dk=new Date(dateStr+'T00:00').toDateString();
+  if(!fasting[dk]?.firstMeal){
+    const win=(fasting[dk]?.windowHours)||8;
+    fasting[dk]={...(fasting[dk]||{}),firstMeal:timeStr,windowHours:win,firstMealSlot:selectedSlot};
+    DB.set('fasting',fasting);
+    const isSnack=selectedSlot==='snack';
+    showToast(`✅ ${slotLabel}已记录${isSnack?' · 进食窗口已从此刻开始':' · 窗口至 '+m2s(t2m(timeStr)+win*60)}`);
+  } else {
+    showToast('✅ 进食已记录');
+  }
+  closeModal();renderTodaySummary();renderChecklist();selectedSlot=null;
 }
 function saveBinge(){
   const s=document.querySelector('#bSR .selected')?.textContent||'已记录';const n=document.getElementById('iBN').value;
-  DB.push('logs',{icon:'🌊',summary:`饮食状态：${s}${n?' · '+n:''}`});
+  const{dateStr,timeStr}=getInputDateTime();
+  DB.push('logs',{icon:'🌊',summary:`饮食状态：${s}${n?' · '+n:''}`,category:'binge',_date:dateStr,_time:timeStr});
   closeModal();showToast('记录完成，放下它 ✨');renderTodaySummary();
 }
+let _fSlot='meal';
+function selFSlot(val,el){_fSlot=val;document.querySelectorAll('#fslot_meal,#fslot_snack').forEach(b=>b.classList.remove('selected'));if(el)el.classList.add('selected');}
 function saveFasting(){
   const first=document.getElementById('iFF').value;const win=parseInt(document.getElementById('iFW').value);
   const fasting=DB.get('fasting')||{};
-  fasting[todayKey]={...(fasting[todayKey]||{}),firstMeal:first,windowHours:win};
+  fasting[todayKey]={...(fasting[todayKey]||{}),firstMeal:first,windowHours:win,firstMealSlot:_fSlot};
   DB.set('fasting',fasting);
-  const winEnd=minToStr(timeToMin(first)+win*60);
-  closeModal();showToast(`✅ 进食窗口 ${first} — ${winEnd}`);renderTodaySummary();
-  // Schedule window-end reminder
-  const nm=nowMin();const endMin=timeToMin(first)+win*60;const diff=(endMin-nm)*60000;
+  const end=m2s(t2m(first)+win*60);closeModal();
+  const slotLabel=_fSlot==='snack'?'加餐':'正餐';
+  showToast(`✅ 第一次进食（${slotLabel}）${first}，窗口至 ${end}`);
+  renderTodaySummary();renderChecklist();
+  const nm=nowMin();const diff=(t2m(first)+win*60-nm)*60000;
   if(diff>0&&diff<12*3600000)setTimeout(()=>showToast('🌙 进食窗口已结束，尽量不再进食'),diff);
 }
 function saveLastMeal(){
-  const last=document.getElementById('iLM').value;
-  const yd=new Date();yd.setDate(yd.getDate()-1);const yKey=yd.toDateString();
-  const fasting=DB.get('fasting')||{};
-  fasting[yKey]={...(fasting[yKey]||{}),lastMeal:last,_reviewed:false};
-  DB.set('fasting',fasting);closeModal();
-  checkYesterdayLastMeal();renderTodaySummary();
-  const fs=fastState();
-  if(fs.phase==='fasting'&&fs.fastTargetStr)showToast(`今天最早 ${fs.fastTargetStr} 可以开吃`);
+  const last=document.getElementById('iLM').value;const yd=new Date();yd.setDate(yd.getDate()-1);const yKey=yd.toDateString();
+  const fasting=DB.get('fasting')||{};fasting[yKey]={...(fasting[yKey]||{}),lastMeal:last,_checked:false,_morningShown:false};DB.set('fasting',fasting);
+  closeModal();checkYesterdayLastMeal();renderTodaySummary();
+  const fs=fastState();if(fs.fastTargetStr)showToast(`今天最早 ${fs.fastTargetStr} 可以开吃`);
 }
 
 // ── EDIT / DELETE ─────────────────────────────────────────
 function editEntry(type,id){
-  const entry=(DB.get(type)||[]).find(e=>e.id===id);if(!entry)return;
-  if(type==='weights'){showModal(`<div class="modal-title">编辑体重</div>
+  const arr=DB.get(type)||[];const entry=arr.find(e=>e.id===id);if(!entry)return;
+  const d=new Date(entry.date);
+  const dStr=d.toISOString().slice(0,10);
+  const tStr=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
+
+  let fields='';
+  if(type==='weights')fields=`
     <div class="modal-label">体重（kg）</div><input class="modal-input" id="eW" type="number" step="0.1" value="${entry.value}" inputmode="decimal">
     <div class="modal-label">体脂率（%）</div><input class="modal-input" id="eF" type="number" step="0.1" value="${entry.fat||''}" inputmode="decimal">
-    <div class="modal-label">备注</div><input class="modal-input" id="eN" value="${entry.note||''}">
-    <button class="btn-primary" onclick="doEdit('weights','${id}')">保存</button>
-    <button class="btn-danger" onclick="deleteEntry('weights','${id}')">删除这条</button>
-    <button class="btn-ghost" onclick="closeModal()">取消</button>`);}
-  else if(type==='exercises'){showModal(`<div class="modal-title">编辑运动</div>
+    <div class="modal-label">备注</div><input class="modal-input" id="eN" value="${entry.note||''}">`;
+  else if(type==='exercises')fields=`
     <div class="modal-label">运动种类</div><input class="modal-input" id="eET" value="${entry.type}">
     <div class="modal-label">时长（分钟）</div><input class="modal-input" id="eED" type="number" value="${entry.dur}" inputmode="numeric">
-    <div class="modal-label">消耗（kcal）</div><input class="modal-input" id="eEC" type="number" value="${entry.cal||''}" inputmode="numeric">
-    <button class="btn-primary" onclick="doEdit('exercises','${id}')">保存</button>
-    <button class="btn-danger" onclick="deleteEntry('exercises','${id}')">删除这条</button>
-    <button class="btn-ghost" onclick="closeModal()">取消</button>`);}
-  else if(type==='measures'){showModal(`<div class="modal-title">编辑围度</div>
+    <div class="modal-label">消耗（kcal）</div><input class="modal-input" id="eEC" type="number" value="${entry.cal||''}" inputmode="numeric">`;
+  else if(type==='measures')fields=`
     <div class="modal-label">腰围</div><input class="modal-input" id="eMW" type="number" step="0.5" value="${entry.waist||''}" inputmode="decimal">
     <div class="modal-label">臀围</div><input class="modal-input" id="eMH" type="number" step="0.5" value="${entry.hip||''}" inputmode="decimal">
     <div class="modal-label">大腿围</div><input class="modal-input" id="eMT" type="number" step="0.5" value="${entry.thigh||''}" inputmode="decimal">
-    <div class="modal-label">手臂围</div><input class="modal-input" id="eMA" type="number" step="0.5" value="${entry.arm||''}" inputmode="decimal">
-    <button class="btn-primary" onclick="doEdit('measures','${id}')">保存</button>
-    <button class="btn-danger" onclick="deleteEntry('measures','${id}')">删除这条</button>
-    <button class="btn-ghost" onclick="closeModal()">取消</button>`);}
-  else if(type==='logs'){showModal(`<div class="modal-title">编辑记录</div>
-    <div class="modal-label">内容</div><input class="modal-input" id="eLT" value="${entry.summary}">
-    <button class="btn-primary" onclick="doEdit('logs','${id}')">保存</button>
-    <button class="btn-danger" onclick="deleteEntry('logs','${id}')">删除这条</button>
-    <button class="btn-ghost" onclick="closeModal()">取消</button>`);}
+    <div class="modal-label">手臂围</div><input class="modal-input" id="eMA" type="number" step="0.5" value="${entry.arm||''}" inputmode="decimal">`;
+  else if(type==='logs')fields=`<div class="modal-label">内容</div><input class="modal-input" id="eLT" value="${entry.summary}">`;
+  else if(type==='meals'){
+    const slotNames={'first':'第一餐','second':'第二餐','third':'第三餐','snack':'加餐 / 零食'};
+    fields=`<div class="modal-label">餐次</div>
+      <select class="modal-select" id="eMS">
+        <option value="first" ${entry.slot==='first'?'selected':''}>第一餐</option>
+        <option value="second" ${entry.slot==='second'?'selected':''}>第二餐</option>
+        <option value="third" ${entry.slot==='third'?'selected':''}>第三餐</option>
+        <option value="snack" ${entry.slot==='snack'?'selected':''}>加餐 / 零食</option>
+      </select>
+      <div class="modal-label">吃了什么</div><input class="modal-input" id="eML" value="${entry.note||''}">`;
+  }
+  else if(type==='energyEvents'){
+    fields=`<div class="modal-label">能量状态</div>
+      <div class="meal-slots">
+        <button class="meal-slot ${entry.mode==='peak'?'selected':''}" id="eem_peak" onclick="selEMode('peak',this)">⚡ 高峰</button>
+        <button class="meal-slot ${entry.mode==='low'?'selected':''}" id="eem_low" onclick="selEMode('low',this)">🌙 低谷</button>
+      </div>
+      <div class="modal-label">备注（可选）</div>
+      <input class="modal-input" id="eENote" value="${entry.note||''}" placeholder="手滑了？这里说明一下">`;
+  }
+
+  showModal(`<div class="modal-title">编辑记录</div>
+    ${fields}
+    <div class="modal-label">日期</div><input class="modal-input" id="eDate" type="date" value="${dStr}">
+    <div class="modal-label">时间</div><input class="modal-input" id="eTime" type="time" value="${tStr}">
+    <button class="btn-primary" onclick="doEdit('${type}','${id}')">保存</button>
+    <button class="btn-danger" onclick="deleteEntry('${type}','${id}')">删除这条</button>
+    <button class="btn-ghost" onclick="closeModal()">取消</button>`);
 }
 function doEdit(type,id){
+  const entry=(DB.get(type)||[]).find(e=>e.id===id);if(!entry)return;
   let f={};
-  if(type==='weights')f={value:parseFloat(document.getElementById('eW').value),fat:parseFloat(document.getElementById('eF').value)||null,note:document.getElementById('eN').value};
-  else if(type==='exercises')f={type:document.getElementById('eET').value,dur:parseInt(document.getElementById('eED').value)||0,cal:parseInt(document.getElementById('eEC').value)||null};
-  else if(type==='measures')f={waist:parseFloat(document.getElementById('eMW').value)||null,hip:parseFloat(document.getElementById('eMH').value)||null,thigh:parseFloat(document.getElementById('eMT').value)||null,arm:parseFloat(document.getElementById('eMA').value)||null};
-  else if(type==='logs')f={summary:document.getElementById('eLT').value};
+  const eDate=document.getElementById('eDate')?.value;const eTime=document.getElementById('eTime')?.value;
+  if(eDate&&eTime)f.date=parseDateTimeToISO(eDate,eTime);
+  if(type==='weights'){f.value=parseFloat(document.getElementById('eW').value);f.fat=parseFloat(document.getElementById('eF').value)||null;f.note=document.getElementById('eN').value;}
+  else if(type==='exercises'){f.type=document.getElementById('eET').value;f.dur=parseInt(document.getElementById('eED').value)||0;f.cal=parseInt(document.getElementById('eEC').value)||null;}
+  else if(type==='measures'){f.waist=parseFloat(document.getElementById('eMW').value)||null;f.hip=parseFloat(document.getElementById('eMH').value)||null;f.thigh=parseFloat(document.getElementById('eMT').value)||null;f.arm=parseFloat(document.getElementById('eMA').value)||null;}
+  else if(type==='logs')f.summary=document.getElementById('eLT').value;
+  else if(type==='meals'){f.note=document.getElementById('eML').value;f.slot=document.getElementById('eMS').value;}
+  else if(type==='energyEvents'){
+    f.mode=document.getElementById('eem_peak')?.classList.contains('selected')?'peak':'low';
+    f.note=document.getElementById('eENote')?.value||'';
+  }
   DB.updateById(type,id,f);closeModal();showToast('✅ 已更新');
   renderTodaySummary();
   if(document.getElementById('page-data').classList.contains('active'))renderDataPage();
-  if(document.getElementById('page-history').classList.contains('active'))renderHistory();
 }
 function deleteEntry(type,id){
   if(!confirm('确定删除这条记录？'))return;
   DB.removeById(type,id);closeModal();showToast('已删除');
   renderTodaySummary();
   if(document.getElementById('page-data').classList.contains('active'))renderDataPage();
-  if(document.getElementById('page-history').classList.contains('active'))renderHistory();
 }
 
 // ── PAGE SWITCH ───────────────────────────────────────────
 function switchPage(name,btn){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));
-  document.getElementById('page-'+name).classList.add('active');
-  btn.classList.add('active');document.getElementById('mainScroll').scrollTop=0;
+  document.getElementById('page-'+name).classList.add('active');btn.classList.add('active');
+  document.getElementById('mainScroll').scrollTop=0;
   if(name==='data')renderDataPage();
-  if(name==='history')renderHistory();
+}
+
+// ── DATA TABS ─────────────────────────────────────────────
+let activeDataTab='weight';
+function switchDataTab(name,btn){
+  activeDataTab=name;
+  document.querySelectorAll('#page-data .data-tabs:first-of-type .data-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.data-section').forEach(s=>s.classList.remove('active'));
+  document.getElementById('ds'+name.charAt(0).toUpperCase()+name.slice(1)).classList.add('active');
+  if(name==='combined')renderCombinedChart();
+  if(name==='energy'){
+    const lbl=document.getElementById('energyDaysLabel');
+    if(lbl)lbl.textContent=energyViewDays+'天';
+    renderEnergyChart();
+  }
+}
+function switchRecordTab(name,btn){
+  currentRecordFilter=name;
+  const tabs=document.querySelectorAll('#page-data .data-tabs');
+  if(tabs[1])tabs[1].querySelectorAll('.data-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderAllRecords();
 }
 
 // ── DATA PAGE ─────────────────────────────────────────────
@@ -736,7 +1125,7 @@ function renderDataPage(){
   const weights=DB.get('weights')||[];const exercises=DB.get('exercises')||[];const logs=DB.get('logs')||[];
   if(weights.length>0){
     const l=weights[weights.length-1];document.getElementById('latestWeight').textContent=l.value;
-    if(weights.length>1){const p=weights[weights.length-2];const d=(l.value-p.value).toFixed(1);const el=document.getElementById('weightChange');el.textContent=(d>0?'+':'')+d+' kg';el.className='stat-change '+(parseFloat(d)>0?'up':'down');}
+    if(weights.length>1){const p=weights[weights.length-2];const diff=(l.value-p.value).toFixed(1);const el=document.getElementById('weightChange');el.textContent=(diff>0?'+':'')+diff+' kg';el.className='stat-change '+(parseFloat(diff)>0?'up':'down');}
   }
   const ws=new Date();ws.setDate(ws.getDate()-7);
   document.getElementById('weekExercise').textContent=exercises.filter(e=>new Date(e.date)>=ws).length;
@@ -746,56 +1135,438 @@ function renderDataPage(){
   for(let i=0;i<60;i++){const k=new Date(sd).toDateString();if(logs.some(l=>new Date(l.date).toDateString()===k)){streak++;sd.setDate(sd.getDate()-1)}else break;}
   document.getElementById('streak').textContent=streak;
   renderWeightChart(weights);renderMeasureChart(DB.get('measures')||[]);renderEnergyChart();
-  const exEl=document.getElementById('exerciseLogList');
-  if(!exercises.length){exEl.innerHTML='<div class="empty"><div class="empty-icon">🏃</div><div class="empty-text">还没有运动记录</div></div>';return}
-  exEl.innerHTML=exercises.slice().reverse().slice(0,15).map(e=>{
-    const d=new Date(e.date);
-    return`<div class="log-entry"><div class="log-dot"></div><div style="flex:1"><div class="log-entry-date">${d.getMonth()+1}/${d.getDate()}</div><div class="log-entry-text">${e.type} · ${e.dur}分钟${e.cal?' · '+e.cal+'kcal':''}${e.mood?' · '+e.mood:''}</div><div class="log-actions"><button class="log-action-btn" onclick="editEntry('exercises','${e.id}')">编辑</button><button class="log-action-btn" onclick="deleteEntry('exercises','${e.id}')">删除</button></div></div></div>`;
-  }).join('');
+  renderAllRecords();
 }
+
+function noDataMsg(ctx,msg){const c=ctx.canvas;ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle='#9b9088';ctx.font='13px sans-serif';ctx.textAlign='center';ctx.fillText(msg,c.width/2,c.height/2)}
+
 function renderWeightChart(weights){
   const ctx=document.getElementById('weightChart').getContext('2d');
   if(wChart)wChart.destroy();
-  if(weights.length<2){ctx.clearRect(0,0,400,200);ctx.fillStyle='#9b9088';ctx.font='13px sans-serif';ctx.textAlign='center';ctx.fillText('记录 2 次以上后显示趋势',200,100);return}
+  if(weights.length<2){noDataMsg(ctx,'记录 2 次以上后显示趋势');return}
   const data=weights.slice(-30);
-  wChart=new Chart(ctx,{type:'line',data:{labels:data.map(w=>{const d=new Date(w.date);return`${d.getMonth()+1}/${d.getDate()}`}),datasets:[{data:data.map(w=>w.value),borderColor:'#8b6f5e',backgroundColor:'rgba(139,111,94,0.08)',tension:0.3,fill:true,pointRadius:4,pointBackgroundColor:'#8b6f5e',borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:{size:11},color:'#9b9088'}},y:{grid:{color:'rgba(42,37,32,0.05)'},ticks:{font:{size:11},color:'#9b9088'}}}}});
+  wChart=new Chart(ctx,{type:'line',data:{labels:data.map(w=>dateLabel(new Date(w.date))),datasets:[{data:data.map(w=>w.value),borderColor:'#8b6f5e',backgroundColor:'rgba(139,111,94,0.08)',tension:0.3,fill:true,pointRadius:4,pointBackgroundColor:'#8b6f5e',borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:{size:11},color:'#9b9088'}},y:{grid:{color:'rgba(42,37,32,0.05)'},ticks:{font:{size:11},color:'#9b9088'}}}}});
 }
 function renderMeasureChart(measures){
   const ctx=document.getElementById('measureChart').getContext('2d');
   if(mChart)mChart.destroy();
-  if(measures.length<2){ctx.clearRect(0,0,400,200);ctx.fillStyle='#9b9088';ctx.font='13px sans-serif';ctx.textAlign='center';ctx.fillText('记录 2 次以上后显示趋势',200,100);return}
+  if(measures.length<2){noDataMsg(ctx,'记录 2 次以上后显示趋势');return}
   const data=measures.slice(-12);
-  const labels=data.map(m=>{const d=new Date(m.date);return`${d.getMonth()+1}/${d.getDate()}`});
+  const labels=data.map(m=>dateLabel(new Date(m.date)));
   const ds=[{label:'腰',key:'waist',color:'#4a7c6f'},{label:'臀',key:'hip',color:'#8b6f5e'},{label:'腿',key:'thigh',color:'#c4956a'}].filter(d=>data.some(m=>m[d.key])).map(d=>({label:d.label,data:data.map(m=>m[d.key]||null),borderColor:d.color,backgroundColor:'transparent',tension:0.3,pointRadius:3,borderWidth:2,spanGaps:true}));
   mChart=new Chart(ctx,{type:'line',data:{labels,datasets:ds},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{font:{size:11},color:'#6b6158',boxWidth:12,padding:8}}},scales:{x:{grid:{display:false},ticks:{font:{size:11},color:'#9b9088'}},y:{grid:{color:'rgba(42,37,32,0.05)'},ticks:{font:{size:11},color:'#9b9088'}}}}});
 }
-function renderEnergyChart(){
-  const ctx=document.getElementById('energyChart').getContext('2d');
-  if(eChart)eChart.destroy();
-  const el=DB.get('energyLog')||[];
-  if(el.length<2){ctx.clearRect(0,0,400,200);ctx.fillStyle='#9b9088';ctx.font='13px sans-serif';ctx.textAlign='center';ctx.fillText('记录积累后显示能量趋势',200,100);return}
-  const data=el.slice(-21);
-  eChart=new Chart(ctx,{type:'bar',data:{
-    labels:data.map(e=>{const d=new Date(e.dateKey);return`${d.getMonth()+1}/${d.getDate()}`}),
-    datasets:[{data:data.map(e=>e.score??50),backgroundColor:data.map(e=>e.lowEnergy?'rgba(184,92,78,0.7)':e.mode==='peak'?'rgba(74,124,111,0.7)':'rgba(139,111,94,0.7)'),borderRadius:4,borderSkipped:false}]
-  },options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:{size:10},color:'#9b9088'}},y:{min:0,max:100,grid:{color:'rgba(42,37,32,0.05)'},ticks:{font:{size:11},color:'#9b9088',callback:v=>v+'%'}}}}});
+let energyViewDays=1;
+const ENERGY_ZOOM_STEPS=[1,2,7,14];
+function energyZoom(dir){
+  const idx=ENERGY_ZOOM_STEPS.indexOf(energyViewDays);
+  const next=idx+dir;
+  if(next<0||next>=ENERGY_ZOOM_STEPS.length)return;
+  energyViewDays=ENERGY_ZOOM_STEPS[next];
+  document.getElementById('energyDaysLabel').textContent=energyViewDays+'天';
+  renderEnergyChart();
 }
 
-// ── HISTORY ───────────────────────────────────────────────
-function renderHistory(){
-  const logs=DB.get('logs')||[];const weights=DB.get('weights')||[];const exercises=DB.get('exercises')||[];const measures=DB.get('measures')||[];
-  const all=[
-    ...logs.map(l=>({...l,_t:'logs'})),
-    ...weights.map(w=>({...w,_t:'weights',icon:'⚖️',summary:`体重 ${w.value} kg${w.fat?'，体脂 '+w.fat+'%':''}${w.note?' · '+w.note:''}`})),
-    ...exercises.map(e=>({...e,_t:'exercises',icon:'🏃',summary:`${e.type} ${e.dur}分钟${e.cal?' · '+e.cal+'kcal':''}${e.mood?' · '+e.mood:''}`})),
-    ...measures.map(m=>{const p=[m.waist&&`腰${m.waist}`,m.hip&&`臀${m.hip}`,m.thigh&&`腿${m.thigh}`,m.arm&&`臂${m.arm}`].filter(Boolean);return{...m,_t:'measures',icon:'📏',summary:'围度 · '+p.join(' / ')+' cm'}})
-  ].sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,100);
-  const el=document.getElementById('historyList');
-  if(!all.length){el.innerHTML='<div class="empty"><div class="empty-icon">📖</div><div class="empty-text">还没有记录</div></div>';return}
+function renderEnergyChart(){
+  const canvas=document.getElementById('energyChart');
+  if(!canvas)return;
+  // 只使用手动切换的事件
+  const allEvents=(DB.get('energyEvents')||[]).filter(e=>!e.auto)
+    .sort((a,b)=>new Date(a.date)-new Date(b.date));
+
+  const ctx=canvas.getContext('2d');
+  if(allEvents.length<1){
+    canvas.width=320;canvas.height=120;canvas.style.width='320px';canvas.style.height='120px';
+    ctx.clearRect(0,0,320,120);ctx.fillStyle='#9b9088';ctx.font='13px sans-serif';ctx.textAlign='center';
+    ctx.fillText('手动切换模式后这里会显示能量波动',160,60);return;
+  }
+
+  const days=energyViewDays;
+  const dpr=window.devicePixelRatio||1;
+  const containerW=canvas.parentElement?.clientWidth||320;
+  // 每天显示宽度
+  const dayW=Math.max(60,Math.floor((containerW-48)/days));
+  const canvasW=Math.max(containerW,48+dayW*days);
+  const topPad=8,botPad=28,chartH=100,labelH=20;
+  const canvasH=topPad+chartH+botPad;
+  const leftPad=8,rightPad=8;
+
+  canvas.width=canvasW*dpr;canvas.height=canvasH*dpr;
+  canvas.style.width=canvasW+'px';canvas.style.height=canvasH+'px';
+  ctx.scale(dpr,dpr);
+  ctx.clearRect(0,0,canvasW,canvasH);
+
+  // 峰值/低谷 Y 位置
+  const peakY=topPad+chartH*0.10; // 高峰区块顶
+  const peakBot=topPad+chartH*0.45; // 高峰区块底
+  const lowTop=topPad+chartH*0.55;  // 低谷区块顶
+  const lowBot=topPad+chartH*0.90;  // 低谷区块底
+
+  // 遍历每一天
+  const now=new Date();
+  const trendPts=[]; // 用于折线（每个方块顶部中心）
+
+  for(let di=0;di<days;di++){
+    const dayDate=new Date(now);
+    dayDate.setDate(dayDate.getDate()-(days-1-di));
+    dayDate.setHours(0,0,0,0);
+    const dayEnd=new Date(dayDate);dayEnd.setHours(23,59,59,999);
+
+    const dayX=leftPad+di*dayW;
+
+    // 当天的能量事件（仅手动），排序
+    const dayEvts=allEvents.filter(e=>{const d=new Date(e.date);return d>=dayDate&&d<=dayEnd;});
+
+    // 在今天范围内，从00:00开始，以上一个有效事件为"当前状态"
+    // 找到这一天开始前的最后一个事件，作为当天0点起始状态
+    const prevEvts=allEvents.filter(e=>new Date(e.date)<dayDate);
+    let startMode=prevEvts.length>0?prevEvts[prevEvts.length-1].mode:null;
+
+    // 构建 [startMin, endMin, mode] 的时间段列表
+    const segs=[];
+    let cursor=0; // 分钟，0=当天00:00
+    const dayTotalMin=1440;
+
+    // 如果有起始状态
+    const allDayEvtsSorted=[...dayEvts].sort((a,b)=>new Date(a.date)-new Date(b.date));
+
+    if(startMode){
+      // 从0到第一个事件之前
+      const firstEvtMin=allDayEvtsSorted.length>0
+        ? new Date(allDayEvtsSorted[0].date).getHours()*60+new Date(allDayEvtsSorted[0].date).getMinutes()
+        : dayTotalMin;
+      if(firstEvtMin>0) segs.push({start:0,end:firstEvtMin,mode:startMode});
+    }
+    allDayEvtsSorted.forEach((ev,idx)=>{
+      const tStart=new Date(ev.date).getHours()*60+new Date(ev.date).getMinutes();
+      const tEnd=idx+1<allDayEvtsSorted.length
+        ? new Date(allDayEvtsSorted[idx+1].date).getHours()*60+new Date(allDayEvtsSorted[idx+1].date).getMinutes()
+        : dayTotalMin;
+      segs.push({start:tStart,end:tEnd,mode:ev.mode});
+    });
+
+    // 绘制各时间段方块
+    segs.forEach(seg=>{
+      const xStart=dayX+(seg.start/dayTotalMin)*dayW;
+      const xEnd=dayX+(seg.end/dayTotalMin)*dayW;
+      const bw=Math.max(1,xEnd-xStart-0.5);
+      const isPeak=seg.mode==='peak';
+      const bTop=isPeak?peakY:lowTop;
+      const bBot=isPeak?peakBot:lowBot;
+      ctx.fillStyle=isPeak?'rgba(74,124,111,0.75)':'rgba(139,111,94,0.65)';
+      ctx.fillRect(xStart,bTop,bw,bBot-bTop);
+    });
+
+    // 计算当天主要模式（用于折线点Y）：取最后一个事件的模式或均值
+    if(segs.length>0){
+      // 找主导模式
+      let peakSec=0,lowSec=0;
+      segs.forEach(s=>{const dur=s.end-s.start;if(s.mode==='peak')peakSec+=dur;else lowSec+=dur;});
+      const domMode=peakSec>=lowSec?'peak':'low';
+      const midX=dayX+dayW/2;
+      const midY=domMode==='peak'?(peakY+peakBot)/2:(lowTop+lowBot)/2;
+      trendPts.push({x:midX,y:midY,has:true});
+    } else {
+      trendPts.push({x:dayX+dayW/2,y:null,has:false});
+    }
+
+    // 时间轴分割线
+    if(di>0){
+      ctx.strokeStyle='rgba(42,37,32,0.08)';ctx.lineWidth=0.5;
+      ctx.beginPath();ctx.moveTo(dayX,topPad);ctx.lineTo(dayX,topPad+chartH);ctx.stroke();
+    }
+
+    // 日期标签
+    const lbl=days===1
+      ? ['00','06','12','18','24'].map((h,hi)=>{
+          ctx.font='8px -apple-system,sans-serif';ctx.fillStyle='#9b9088';ctx.textAlign='center';
+          const hx=dayX+(parseInt(h)/24)*dayW;
+          ctx.fillText(h+'h',hx,topPad+chartH+18);
+        }) && ''
+      : (()=>{
+          ctx.font='8.5px -apple-system,sans-serif';ctx.fillStyle='#9b9088';ctx.textAlign='center';
+          ctx.fillText(`${dayDate.getMonth()+1}/${dayDate.getDate()}`,dayX+dayW/2,topPad+chartH+18);
+          return '';
+        })();
+    if(days===1){
+      // 已在上面画了时间标签
+    }
+  }
+  // 如果是单天，补上最左和中间的小时标注（已在上方循环内处理）
+
+  // 折线：连接各天中心点
+  ctx.strokeStyle='rgba(42,37,32,0.5)';ctx.lineWidth=1.5;ctx.lineJoin='round';
+  ctx.setLineDash([3,3]);
+  let lineStarted=false;
+  ctx.beginPath();
+  trendPts.forEach(pt=>{
+    if(!pt.has){lineStarted=false;return;}
+    if(!lineStarted){ctx.moveTo(pt.x,pt.y);lineStarted=true;}
+    else ctx.lineTo(pt.x,pt.y);
+  });
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // 折线点
+  trendPts.forEach(pt=>{
+    if(!pt.has)return;
+    ctx.beginPath();ctx.arc(pt.x,pt.y,2.5,0,Math.PI*2);
+    ctx.fillStyle='rgba(42,37,32,0.6)';ctx.fill();
+  });
+
+  // 高峰/低谷标注
+  ctx.font='8px -apple-system,sans-serif';ctx.textAlign='left';
+  ctx.fillStyle='#4a7c6f';ctx.fillText('⚡',2,(peakY+peakBot)/2+3);
+  ctx.fillStyle='#8b6f5e';ctx.fillText('🌙',2,(lowTop+lowBot)/2+3);
+}
+let combinedDays=7;
+function setCombinedDays(n,btn){
+  combinedDays=n;
+  document.querySelectorAll('#cDays7,#cDays14,#cDays30').forEach(b=>b.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+  renderCombinedChart();
+}
+
+function renderCombinedChart(){
+  const canvas=document.getElementById('combinedChart');
+  if(!canvas)return;
+  const weights=DB.get('weights')||[];
+  const fasting=DB.get('fasting')||{};
+  const energyEvents=(DB.get('energyEvents')||[]).filter(e=>!e.auto)
+    .sort((a,b)=>new Date(a.date)-new Date(b.date));
+  const days=combinedDays||7;
+
+  // ── 每天数据 ──
+  const dayData=[];
+  for(let i=days-1;i>=0;i--){
+    const d=new Date();d.setDate(d.getDate()-i);d.setHours(0,0,0,0);
+    const k=d.toDateString();
+    const tf=fasting[k]||{};
+    const dayWeights=weights.filter(w=>new Date(w.date).toDateString()===k)
+      .sort((a,b)=>new Date(a.date)-new Date(b.date));
+
+    // 能量事件：计算高峰/低谷占时间
+    const dayEvts=energyEvents.filter(e=>new Date(e.date).toDateString()===k)
+      .sort((a,b)=>new Date(a.date)-new Date(b.date));
+    // 找当天0点前的最后一个事件，作为当天起始状态
+    const prevEvts=energyEvents.filter(e=>new Date(e.date)<d);
+    const startMode=prevEvts.length>0?prevEvts[prevEvts.length-1].mode:null;
+
+    let peakMin=0,lowMin=0;
+    const allDaySrc=[];
+    if(startMode){
+      const firstMin=dayEvts.length>0
+        ? new Date(dayEvts[0].date).getHours()*60+new Date(dayEvts[0].date).getMinutes() : 1440;
+      allDaySrc.push({mode:startMode,min:0,endMin:firstMin});
+    }
+    dayEvts.forEach((ev,idx)=>{
+      const tS=new Date(ev.date).getHours()*60+new Date(ev.date).getMinutes();
+      const tE=idx+1<dayEvts.length
+        ? new Date(dayEvts[idx+1].date).getHours()*60+new Date(dayEvts[idx+1].date).getMinutes() : 1440;
+      allDaySrc.push({mode:ev.mode,min:tS,endMin:tE});
+    });
+    allDaySrc.forEach(s=>{const dur=s.endMin-s.min;if(s.mode==='peak')peakMin+=dur;else lowMin+=dur;});
+
+    const energyMode=(peakMin===0&&lowMin===0)?null:(peakMin>=lowMin?'peak':'low');
+
+    // K线逻辑：
+    // open = 昨天的空腹体重（即这一天的第一条体重记录，对应昨天的操作效果）
+    // close = 今天空腹体重 = 明天这个字段的open，但对于当天来说就是今天的第一条体重
+    // 实际上按照用户描述：
+    // "昨天的体重"=昨天的开盘，"今天的体重"=昨天的收盘
+    // 也就是说，每天K线的 open=该天第一条体重，close=次日第一条体重
+    // 但数据是按天存储的，所以我们用：
+    // open = 当天第一条体重（昨天操作的结果，今早空腹）
+    // close = 次日第一条体重（今天操作的结果，明早空腹）
+    // 当次日数据不存在时，close暂时不画
+
+    const firstW=dayWeights.length>0?dayWeights[0].value:null;
+    const lastW=dayWeights.length>0?dayWeights[dayWeights.length-1].value:null;
+    const allVals=dayWeights.map(w=>w.value);
+    const highW=allVals.length?Math.max(...allVals):null;
+    const lowW=allVals.length?Math.min(...allVals):null;
+
+    dayData.push({
+      date:d, label:`${d.getMonth()+1}/${d.getDate()}`, k,
+      firstMeal:tf.firstMeal||null,
+      lastMeal:tf.lastMeal||null,
+      windowHours:tf.windowHours||8,
+      weights:dayWeights.map(w=>({
+        min:new Date(w.date).getHours()*60+new Date(w.date).getMinutes(),
+        val:w.value
+      })),
+      openW:firstW,  // 当天第一条体重（今早空腹）
+      closeW:null,   // 填入下一天的第一条体重
+      highW, lowW,
+      lastWeight:lastW,
+      energyMode,
+      peakMin, lowMin,
+      energyEvts:dayEvts
+    });
+  }
+
+  // 填入 closeW：每天的close = 次日的open
+  for(let i=0;i<dayData.length-1;i++){
+    dayData[i].closeW=dayData[i+1].openW;
+  }
+  // 最后一天的close = 当天lastWeight（今天还未结束）
+  if(dayData.length>0){
+    const last=dayData[dayData.length-1];
+    if(last.closeW===null) last.closeW=last.lastWeight;
+  }
+
+  // 5日均线（每天取过去5天有openW的平均值）
+  const ma5=dayData.map((_,idx)=>{
+    const window=[];
+    for(let j=Math.max(0,idx-4);j<=idx;j++){
+      if(dayData[j].openW!==null)window.push(dayData[j].openW);
+    }
+    return window.length>0?window.reduce((a,b)=>a+b,0)/window.length:null;
+  });
+
+  // ── Canvas 绘制 ──
+  const dpr=window.devicePixelRatio||1;
+  const minColW=44;
+  const containerW=canvas.parentElement.clientWidth||320;
+  const colW=Math.max(minColW,Math.floor((containerW-52)/days));
+  const canvasW=52+colW*days;
+  const kH=220,botPad=28,topPad=16;
+  const canvasH=topPad+kH+botPad;
+  canvas.width=canvasW*dpr;canvas.height=canvasH*dpr;
+  canvas.style.width=canvasW+'px';canvas.style.height=canvasH+'px';
+  const ctx=canvas.getContext('2d');
+  ctx.scale(dpr,dpr);
+  ctx.clearRect(0,0,canvasW,canvasH);
+
+  const leftPad=46;
+
+  // ── K线蜡烛图 + 5日均线 ──
+  const kTop=topPad;
+  const kBot=topPad+kH;
+
+  // 计算体重 Y 轴范围（包含所有open/close/high/low）
+  const allWVals=dayData.flatMap(d=>[d.openW,d.closeW,d.highW,d.lowW]).filter(v=>v!=null);
+  const wPad=allWVals.length?0.5:5;
+  const wMin=allWVals.length?Math.min(...allWVals)-wPad:60;
+  const wMax=allWVals.length?Math.max(...allWVals)+wPad:80;
+  function wToY(v){return kBot-((v-wMin)/(wMax-wMin||1))*kH;}
+
+  // 纵轴标注
+  ctx.font='8px -apple-system,sans-serif';ctx.fillStyle='#b0a89e';ctx.textAlign='right';
+  const yTicks=[wMin+wPad, (wMin+wMax)/2, wMax-wPad];
+  yTicks.forEach(v=>{ctx.fillText(v.toFixed(1),leftPad-4,wToY(v)+3);});
+
+  // 横格线下半
+  ctx.strokeStyle='rgba(42,37,32,0.06)';ctx.lineWidth=0.5;
+  [kTop,(kTop+kBot)/2,kBot].forEach(y=>{ctx.beginPath();ctx.moveTo(leftPad,y);ctx.lineTo(canvasW-2,y);ctx.stroke();});
+
+  // ── K线蜡烛图 ──
+  dayData.forEach((day,i)=>{
+    const cx=leftPad+i*colW;
+    const cw=colW-6;
+    const midX=cx+colW/2;
+
+    if(day.openW===null&&day.closeW===null) return;
+    const open=day.openW||day.closeW;
+    const close=day.closeW||day.openW;
+    const high=day.highW||Math.max(open,close);
+    const low=day.lowW||Math.min(open,close);
+
+    // 涨跌颜色：体重减少=红（好事），体重增加=绿（需注意）
+    // 按照金融K线惯例但含义反转：close<open（体重下降）=红色
+    const isDown=(close<open); // 体重减少
+    const candleColor=isDown?'#c0392b':'#27ae60';
+    const candleAlpha=isDown?'rgba(192,57,43,0.8)':'rgba(39,174,96,0.8)';
+    const candleStroke=isDown?'#c0392b':'#27ae60';
+
+    // 蜡烛体填充色：由当天高峰/低谷哪个占时间多决定
+    const energyFill=day.energyMode==='peak'?'rgba(74,124,111,0.7)':
+                     day.energyMode==='low'?'rgba(139,111,94,0.7)':null;
+
+    const yOpen=wToY(open);
+    const yClose=wToY(close);
+    const yHigh=wToY(high);
+    const yLow=wToY(low);
+
+    const bodyTop=Math.min(yOpen,yClose);
+    const bodyBot=Math.max(yOpen,yClose);
+    const bodyH=Math.max(2,bodyBot-bodyTop);
+    const halfW=Math.max(3,cw/2);
+
+    // 上下影线
+    ctx.strokeStyle=candleColor;ctx.lineWidth=1.2;
+    if(yHigh<bodyTop){ctx.beginPath();ctx.moveTo(midX,yHigh);ctx.lineTo(midX,bodyTop);ctx.stroke();}
+    if(yLow>bodyBot){ctx.beginPath();ctx.moveTo(midX,yLow);ctx.lineTo(midX,bodyBot);ctx.stroke();}
+
+    // 蜡烛体：先用能量颜色填充，再用涨跌色描边
+    ctx.fillStyle=energyFill||candleAlpha;
+    ctx.strokeStyle=candleStroke;ctx.lineWidth=1.2;
+    ctx.fillRect(midX-halfW,bodyTop,halfW*2,bodyH);
+    ctx.strokeRect(midX-halfW,bodyTop,halfW*2,bodyH);
+  });
+
+  // ── 5日均线 ──
+  ctx.strokeStyle='#c4956a';ctx.lineWidth=1.5;ctx.lineJoin='round';
+  ctx.setLineDash([]);
+  let ma5started=false;
+  ctx.beginPath();
+  ma5.forEach((v,i)=>{
+    if(v===null){ma5started=false;return;}
+    const x=leftPad+i*colW+colW/2;
+    const y=wToY(v);
+    if(!ma5started){ctx.moveTo(x,y);ma5started=true;}
+    else ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+
+  // 日期标签（底部）
+  dayData.forEach((day,i)=>{
+    const cx=leftPad+i*colW+colW/2;
+    ctx.font='8.5px -apple-system,sans-serif';ctx.fillStyle='#9b9088';ctx.textAlign='center';
+    ctx.fillText(day.label,cx,kBot+botPad-8);
+  });
+}
+
+// ── ALL RECORDS LIST ──────────────────────────────────────
+function renderAllRecords(){
+  const logs=DB.get('logs')||[];const weights=DB.get('weights')||[];const exercises=DB.get('exercises')||[];const measures=DB.get('measures')||[];const meals=DB.get('meals')||[];
+  const energyEvents=(DB.get('energyEvents')||[]).filter(e=>!e.auto);
+  let all=[
+    ...logs.map(l=>({...l,_t:'logs',_cat:l.category||'other'})),
+    ...weights.map(w=>({...w,_t:'weights',_cat:'weight',icon:'⚖️',summary:`体重 ${w.value} kg${w.fat?'，体脂 '+w.fat+'%':''}${w.note?' · '+w.note:''}`})),
+    ...exercises.map(e=>({...e,_t:'exercises',_cat:'exercise',icon:'🏃',summary:`${e.type} ${e.dur}分钟${e.cal?' · '+e.cal+'kcal':''}${e.mood?' · '+e.mood:''}`})),
+    ...measures.map(m=>{const p=[m.waist&&`腰${m.waist}`,m.hip&&`臀${m.hip}`,m.thigh&&`腿${m.thigh}`,m.arm&&`臂${m.arm}`].filter(Boolean);return{...m,_t:'measures',_cat:'measure',icon:'📏',summary:'围度 · '+p.join(' / ')+' cm'}}),
+    ...meals.map(m=>{const slotNames={'first':'第一餐','second':'第二餐','third':'第三餐','snack':'加餐'};return{...m,_t:'meals',_cat:'meal',icon:'🍽️',summary:(slotNames[m.slot]||m.slot)+(m.note?' · '+m.note:'')}}),
+    ...energyEvents.map(e=>({...e,_t:'energyEvents',_cat:'energy',icon:e.mode==='peak'?'⚡':'🌙',summary:(e.mode==='peak'?'高峰模式':'低谷模式')+(e.note?' · '+e.note:'')}))
+  ];
+  // Deduplicate: logs that were added alongside weights/exercises already exist in those arrays
+  // Just show logs for binge/text, and the typed arrays for structured data
+  const structuredIds=new Set([...weights,...exercises,...measures,...meals].map(x=>x.id));
+  // Filter: keep logs that are binge/manual-text, remove duplicates already shown
+  all=all.filter(e=>{
+    if(e._t==='logs'){return['binge','other',undefined].includes(e._cat)||(e.category==='binge')}
+    return true;
+  });
+
+  if(currentRecordFilter!=='all'){
+    const catMap={meal:['meal','meals'],exercise:['exercise','exercises'],weight:['weight','weights'],binge:['binge'],measure:['measure','measures'],energy:['energy','energyEvents']};
+    const cats=catMap[currentRecordFilter]||[];
+    all=all.filter(e=>cats.includes(e._cat)||cats.includes(e._t));
+  }
+
+  all=all.sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,80);
+  const el=document.getElementById('allRecordsList');
+  if(!all.length){el.innerHTML='<div class="empty"><div class="empty-icon">📋</div><div class="empty-text">还没有记录</div></div>';return}
   el.innerHTML=all.map(e=>{
     const d=new Date(e.date);
-    const ds=`${d.getMonth()+1}月${d.getDate()}日 ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
-    return`<div class="log-entry"><div class="log-dot"></div><div style="flex:1"><div class="log-entry-date">${ds}</div><div class="log-entry-text">${e.icon||'📝'} ${e.summary}</div><div class="log-actions"><button class="log-action-btn" onclick="editEntry('${e._t}','${e.id}')">编辑</button><button class="log-action-btn" onclick="deleteEntry('${e._t}','${e.id}')">删除</button></div></div></div>`;
+    return`<div class="log-entry"><div class="log-dot"></div><div style="flex:1">
+      <div class="log-date">${dtLabel(d)}</div>
+      <div class="log-text">${e.icon||'📝'} ${e.summary||''}</div>
+      <div class="log-actions">
+        <button class="log-act" onclick="editEntry('${e._t}','${e.id}')">编辑</button>
+        <button class="log-act" onclick="deleteEntry('${e._t}','${e.id}')">删除</button>
+      </div>
+    </div></div>`;
   }).join('');
 }
 
@@ -804,8 +1575,8 @@ function exportData(){
   const json=JSON.stringify(DB.all(),null,2);
   document.getElementById('backupBox').style.display='block';document.getElementById('importBox').style.display='none';
   document.getElementById('backupText').value=json;
-  setTimeout(()=>{document.getElementById('backupText').select()},100);
-  showToast('📤 点击文字框全选，然后复制');
+  setTimeout(()=>document.getElementById('backupText').select(),100);
+  showToast('📤 点击文字框全选后复制');
 }
 function showImport(){
   document.getElementById('importBox').style.display='block';document.getElementById('backupBox').style.display='none';
@@ -814,59 +1585,83 @@ function showImport(){
 function importFromText(){
   const text=document.getElementById('importText').value.trim();if(!text){showToast('请粘贴备份数据');return}
   try{const d=JSON.parse(text);if(!d._v)throw 0;DB.restore(d);showToast('✅ 导入成功，正在刷新...');setTimeout(()=>location.reload(),1500)}
-  catch{const s=document.getElementById('backupStatus');s.style.display='block';s.style.color='var(--danger)';s.textContent='❌ 格式不正确，请使用本 App 导出的数据'}
+  catch{const s=document.getElementById('backupStatus');s.style.display='block';s.style.color='var(--danger)';s.textContent='❌ 格式不正确'}
 }
 function exportFile(){
   const blob=new Blob([JSON.stringify(DB.all(),null,2)],{type:'application/json'});
-  const url=URL.createObjectURL(blob);const a=document.createElement('a');
-  a.href=url;a.download=`surf-${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(url);showToast('✅ 文件已下载');
+  const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`surf-${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(url);showToast('✅ 文件已下载');
 }
-function importFromFile(event){
-  const file=event.target.files[0];if(!file)return;
-  const reader=new FileReader();
-  reader.onload=e=>{try{const d=JSON.parse(e.target.result);if(!d._v)throw 0;DB.restore(d);showToast('✅ 导入成功，正在刷新...');setTimeout(()=>location.reload(),1500)}catch{showToast('❌ 文件格式不正确')}};
-  reader.readAsText(file);event.target.value='';
+function importFromFile(ev){
+  const file=ev.target.files[0];if(!file)return;
+  const r=new FileReader();r.onload=e=>{try{const d=JSON.parse(e.target.result);if(!d._v)throw 0;DB.restore(d);showToast('✅ 导入成功，正在刷新...');setTimeout(()=>location.reload(),1500)}catch{showToast('❌ 文件格式不正确')}};
+  r.readAsText(file);ev.target.value='';
 }
 
 // ── PDF ───────────────────────────────────────────────────
 function exportPDF(){
-  const weights=DB.get('weights')||[];const exercises=DB.get('exercises')||[];const energyLog=DB.get('energyLog')||[];const measures=DB.get('measures')||[];
+  const weights=DB.get('weights')||[];const exercises=DB.get('exercises')||[];const measures=DB.get('measures')||[];const fasting=DB.get('fasting')||{};const events=DB.get('energyEvents')||[];
+  const now=new Date();const monthAgo=new Date(now);monthAgo.setMonth(monthAgo.getMonth()-1);const yearAgo=new Date(now);yearAgo.setFullYear(yearAgo.getFullYear()-1);
+
+  // Build 30-day combined data
+  const days30=[];for(let i=29;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);days30.push(d);}
+  const combined30=days30.map(d=>{
+    const k=d.toDateString();const lbl=dateLabel(d);
+    const dayW=weights.filter(w=>new Date(w.date).toDateString()===k);const wVal=dayW.length?dayW[dayW.length-1].value:null;
+    const tf=fasting[k]||{};const winH=tf.firstMeal&&tf.lastMeal?Math.max(0,(t2m(tf.lastMeal)-t2m(tf.firstMeal))/60).toFixed(1):null;
+    const dayEvts=events.filter(e=>new Date(e.date).toDateString()===k);const energyMode=dayEvts.length?(dayEvts.filter(e=>e.mode==='peak').length>dayEvts.length/2?'⚡ 高峰':'🌙 低谷'):'—';
+    return{lbl,wVal,winH,energyMode};
+  }).filter(r=>r.wVal||r.winH||r.energyMode!=='—');
+
+  // 1-year monthly
+  const byMonth={};weights.filter(w=>new Date(w.date)>=yearAgo).forEach(w=>{const d=new Date(w.date);const k=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;if(!byMonth[k])byMonth[k]=[];byMonth[k].push(w.value);});
+
   const win=window.open('','_blank');
   win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>能量冲浪手 · 数据报告</title>
-  <style>body{font-family:sans-serif;max-width:700px;margin:40px auto;color:#2a2520;font-size:14px;line-height:1.6}h1{font-size:22px;margin-bottom:4px}.sub{color:#9b9088;font-size:13px;margin-bottom:30px}h2{font-size:15px;font-weight:600;margin:24px 0 10px;padding-bottom:6px;border-bottom:1px solid #e5dfd7}table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:8px 10px;text-align:left;border-bottom:1px solid #f0ebe3}th{color:#9b9088;font-weight:500}.pk{background:#e8f4f0;color:#4a7c6f;padding:2px 8px;border-radius:8px;font-size:11px}.lw{background:#f4ede8;color:#8b6f5e;padding:2px 8px;border-radius:8px;font-size:11px}.le{color:#b85c4e;font-size:11px}@media print{body{margin:20px}}</style></head><body>
-  <h1>🏄🏻‍♀️ 吃吧！能量冲浪手</h1><div class="sub">数据报告 · ${new Date().toLocaleDateString('zh-CN')}</div>
-  <h2>体重记录（最近 30 条）</h2>
+  <style>*{box-sizing:border-box}body{font-family:-apple-system,sans-serif;max-width:720px;margin:0 auto;padding:32px 24px;color:#2a2520;font-size:14px;line-height:1.6}
+  h1{font-size:24px;margin-bottom:2px}h2{font-size:15px;font-weight:600;margin:28px 0 10px;padding-bottom:6px;border-bottom:1px solid #e5dfd7}
+  .sub{color:#9b9088;font-size:13px;margin-bottom:32px}
+  .overview{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:8px}
+  .ov{background:#f5f0eb;border-radius:10px;padding:14px;text-align:center}
+  .ov-v{font-size:24px;font-weight:600;color:#4a7c6f}.ov-l{font-size:11px;color:#9b9088;margin-top:4px}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px}td,th{padding:8px 10px;text-align:left;border-bottom:1px solid #f0ebe3}th{color:#9b9088;font-weight:500;background:#faf7f3}
+  @media print{@page{margin:16mm}body{padding:0}}</style></head><body>
+  <h1>🏄🏻‍♀️ 吃吧！能量冲浪手</h1>
+  <div class="sub">数据报告 · ${now.toLocaleDateString('zh-CN')} ${now.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'})}</div>
+  <h2>概览统计</h2>
+  <div class="overview">
+    <div class="ov"><div class="ov-v">${weights.length>0?weights[weights.length-1].value:' — '}</div><div class="ov-l">最新体重 kg</div></div>
+    <div class="ov"><div class="ov-v">${exercises.length}</div><div class="ov-l">累计运动次</div></div>
+    <div class="ov"><div class="ov-v">${measures.length}</div><div class="ov-l">围度记录次</div></div>
+    <div class="ov"><div class="ov-v">${weights.length>1?((weights[weights.length-1].value-weights[0].value)>0?'+':''+(weights[weights.length-1].value-weights[0].value).toFixed(1)):' — '}</div><div class="ov-l">体重变化 kg</div></div>
+  </div>
+  <h2>近一个月综合趋势（进食窗口 · 体重 · 能量）</h2>
+  <table><tr><th>日期</th><th>体重 kg</th><th>进食窗口 h</th><th>能量状态</th></tr>
+  ${combined30.map(r=>`<tr><td>${r.lbl}</td><td>${r.wVal||'—'}</td><td>${r.winH||'—'}</td><td>${r.energyMode}</td></tr>`).join('')||'<tr><td colspan="4" style="color:#9b9088">暂无数据</td></tr>'}
+  </table>
+  <h2>近 14 天体重</h2>
   <table><tr><th>日期</th><th>体重 kg</th><th>体脂 %</th><th>备注</th></tr>
-  ${weights.slice(-30).reverse().map(w=>{const d=new Date(w.date);return`<tr><td>${d.getMonth()+1}/${d.getDate()}</td><td>${w.value}</td><td>${w.fat||'—'}</td><td>${w.note||'—'}</td></tr>`}).join('')||'<tr><td colspan="4" style="color:#9b9088">暂无数据</td></tr>'}
+  ${weights.slice(-14).reverse().map(w=>{const d=new Date(w.date);return`<tr><td>${d.getMonth()+1}/${d.getDate()}</td><td>${w.value}</td><td>${w.fat||'—'}</td><td>${w.note||'—'}</td></tr>`}).join('')||'<tr><td colspan="4" style="color:#9b9088">暂无数据</td></tr>'}
   </table>
-  <h2>围度记录（最近 12 条）</h2>
-  <table><tr><th>日期</th><th>腰 cm</th><th>臀 cm</th><th>腿 cm</th><th>臂 cm</th></tr>
-  ${measures.slice(-12).reverse().map(m=>{const d=new Date(m.date);return`<tr><td>${d.getMonth()+1}/${d.getDate()}</td><td>${m.waist||'—'}</td><td>${m.hip||'—'}</td><td>${m.thigh||'—'}</td><td>${m.arm||'—'}</td></tr>`}).join('')||'<tr><td colspan="5" style="color:#9b9088">暂无数据</td></tr>'}
+  <h2>近 10 次运动记录</h2>
+  <table><tr><th>时间</th><th>种类</th><th>时长</th><th>消耗</th></tr>
+  ${exercises.slice(-10).reverse().map(e=>{const d=new Date(e.date);return`<tr><td>${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}</td><td>${e.type}</td><td>${e.dur}分钟</td><td>${e.cal?e.cal+' kcal':'—'}</td></tr>`}).join('')||'<tr><td colspan="4" style="color:#9b9088">暂无数据</td></tr>'}
   </table>
-  <h2>运动记录（最近 20 条）</h2>
-  <table><tr><th>日期</th><th>种类</th><th>时长</th><th>消耗</th></tr>
-  ${exercises.slice(-20).reverse().map(e=>{const d=new Date(e.date);return`<tr><td>${d.getMonth()+1}/${d.getDate()}</td><td>${e.type}</td><td>${e.dur} 分钟</td><td>${e.cal?e.cal+' kcal':'—'}</td></tr>`}).join('')||'<tr><td colspan="4" style="color:#9b9088">暂无数据</td></tr>'}
+  <h2>近一年趋势（按月汇总）</h2>
+  <table><tr><th>月份</th><th>最低 kg</th><th>最高 kg</th><th>末次 kg</th></tr>
+  ${Object.entries(byMonth).sort((a,b)=>a[0]>b[0]?1:-1).map(([k,vs])=>`<tr><td>${k}</td><td>${Math.min(...vs)}</td><td>${Math.max(...vs)}</td><td>${vs[vs.length-1]}</td></tr>`).join('')||'<tr><td colspan="4" style="color:#9b9088">暂无数据</td></tr>'}
   </table>
-  <h2>能量日志（最近 21 天）</h2>
-  <table><tr><th>日期</th><th>模式</th><th>任务完成</th></tr>
-  ${energyLog.slice(-21).reverse().map(e=>{const d=new Date(e.dateKey);return`<tr><td>${d.getMonth()+1}/${d.getDate()}</td><td><span class="${e.mode==='peak'?'pk':'lw'}">${e.mode==='peak'?'⚡ 高峰':'🌙 低谷'}</span>${e.lowEnergy?' <span class="le">低能量日</span>':''}</td><td>${e.score!=null?e.score+'%':'—'}</td></tr>`}).join('')||'<tr><td colspan="3" style="color:#9b9088">暂无数据</td></tr>'}
-  </table>
-  <div style="margin-top:40px;font-size:12px;color:#9b9088">低谷期守住底线，和高峰期推进一样有价值。</div>
+  <div style="margin-top:40px;font-size:12px;color:#9b9088;border-top:1px solid #e5dfd7;padding-top:16px">低谷期守住底线，和高峰期推进一样有价值。🏄🏻‍♀️</div>
   <script>window.onload=()=>window.print()<\/script></body></html>`);
   win.document.close();
 }
 
 // ── TOAST ─────────────────────────────────────────────────
-function showToast(msg){
-  const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),3000);
-}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._to);t._to=setTimeout(()=>t.classList.remove('show'),3000)}
 
 // ── START ─────────────────────────────────────────────────
-setInterval(renderTodaySummary,60000); // refresh fasting bars every minute
+setInterval(renderTodaySummary,60000);
 init();
-if(!DB.get('_launched')){DB.set('_launched',true);setTimeout(()=>showToast('👋 先设置今天的状态模式吧'),1200)}
+if(!DB.get('_launched')){DB.set('_launched','1');setTimeout(()=>showToast('👋 先选择今天的状态模式吧'),1200)}
 </script>
-    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
